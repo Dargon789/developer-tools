@@ -147,41 +147,66 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/admin/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.device.mobile",
-				description: "View and manage your mobile devices' metadata",
+				id: "https://www.googleapis.com/auth/admin.directory.userschema",
+				description:
+					"View and manage the provisioning of user schemas on your domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.orgunit",
+				description: "View and manage organization units on your domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.user.alias",
+				description: "View and manage user aliases on your domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.device.mobile.action",
+				description:
+					"Manage your mobile devices by performing administrative tasks",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.group.member",
+				description: "View and manage group subscriptions on your domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.user.readonly",
+				description: "See info about users on your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.domain.readonly",
 				description: "View domains related to your customers",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.resource.calendar",
-				description:
-					"View and manage the provisioning of calendar resources on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.customer.readonly",
+				description: "View customer related information",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.group.member.readonly",
-				description: "View group subscriptions on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly",
+				description: "View delegated admin roles for your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.orgunit.readonly",
 				description: "View organization units on your domain",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.customer.readonly",
-				description: "View customer related information",
+				id: "https://www.googleapis.com/auth/admin.directory.device.mobile",
+				description: "View and manage your mobile devices' metadata",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.user.security",
-				description: "Manage data access permissions for users on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.device.chromeos.readonly",
+				description: "View your ChromeOS devices' metadata",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.user.alias.readonly",
+				description: "View user aliases on your domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.group.readonly",
+				description: "View groups on your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.rolemanagement",
 				description: "Manage delegated admin roles for your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.device.chromeos",
-				description: "View and manage your ChromeOS devices' metadata",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.group",
@@ -194,38 +219,13 @@ export const GOOGLE_APIS = [
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.group.member",
-				description: "View and manage group subscriptions on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.user.security",
+				description: "Manage data access permissions for users on your domain",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.chrome.printers.readonly",
+				id: "https://www.googleapis.com/auth/admin.directory.resource.calendar",
 				description:
-					"See the printers that your organization can use with Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.userschema.readonly",
-				description: "View user schemas on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.group.readonly",
-				description: "View groups on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.orgunit",
-				description: "View and manage organization units on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.user",
-				description: "View and manage the provisioning of users on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.userschema",
-				description:
-					"View and manage the provisioning of user schemas on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.user.alias",
-				description: "View and manage user aliases on your domain",
+					"View and manage the provisioning of calendar resources on your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.customer",
@@ -236,26 +236,25 @@ export const GOOGLE_APIS = [
 				description: "View your mobile devices' metadata",
 			},
 			{
+				id: "https://www.googleapis.com/auth/admin.directory.resource.calendar.readonly",
+				description: "View calendar resources on your domain",
+			},
+			{
 				id: "https://www.googleapis.com/auth/admin.chrome.printers",
 				description:
 					"See, add, edit, and permanently delete the printers that your organization can use with Chrome",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.user.readonly",
-				description: "See info about users on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.device.chromeos",
+				description: "View and manage your ChromeOS devices' metadata",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly",
-				description: "View delegated admin roles for your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.user",
+				description: "View and manage the provisioning of users on your domain",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.device.mobile.action",
-				description:
-					"Manage your mobile devices by performing administrative tasks",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.resource.calendar.readonly",
-				description: "View calendar resources on your domain",
+				id: "https://www.googleapis.com/auth/admin.directory.group.member.readonly",
+				description: "View group subscriptions on your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/admin.directory.domain",
@@ -263,12 +262,13 @@ export const GOOGLE_APIS = [
 					"View and manage the provisioning of domains for your customers",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.device.chromeos.readonly",
-				description: "View your ChromeOS devices' metadata",
+				id: "https://www.googleapis.com/auth/admin.directory.userschema.readonly",
+				description: "View user schemas on your domain",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.user.alias.readonly",
-				description: "View user aliases on your domain",
+				id: "https://www.googleapis.com/auth/admin.chrome.printers.readonly",
+				description:
+					"See the printers that your organization can use with Chrome",
 			},
 		],
 	},
@@ -460,14 +460,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/vertex-ai/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
-				description:
-					"View your data across Google Cloud services and see the email address of your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
+				description:
+					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 		],
 	},
@@ -563,6 +563,22 @@ export const GOOGLE_APIS = [
 			"http://code.google.com/apis/analytics/docs/mgmt/home.html",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/analytics.user.deletion",
+				description: "Manage Google Analytics user deletion requests",
+			},
+			{
+				id: "https://www.googleapis.com/auth/analytics.manage.users.readonly",
+				description: "View Google Analytics user permissions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/analytics.readonly",
+				description: "View your Google Analytics data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/analytics.edit",
+				description: "Edit Google Analytics management entities",
+			},
+			{
 				id: "https://www.googleapis.com/auth/analytics",
 				description: "View and manage your Google Analytics data",
 			},
@@ -571,25 +587,9 @@ export const GOOGLE_APIS = [
 				description: "Manage Google Analytics Account users by email address",
 			},
 			{
-				id: "https://www.googleapis.com/auth/analytics.edit",
-				description: "Edit Google Analytics management entities",
-			},
-			{
-				id: "https://www.googleapis.com/auth/analytics.user.deletion",
-				description: "Manage Google Analytics user deletion requests",
-			},
-			{
-				id: "https://www.googleapis.com/auth/analytics.readonly",
-				description: "View your Google Analytics data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/analytics.provision",
 				description:
 					"Create a new Google Analytics account along with its default property and view",
-			},
-			{
-				id: "https://www.googleapis.com/auth/analytics.manage.users.readonly",
-				description: "View Google Analytics user permissions",
 			},
 		],
 	},
@@ -604,20 +604,20 @@ export const GOOGLE_APIS = [
 			"http://code.google.com/apis/analytics/docs/mgmt/home.html",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/analytics.readonly",
-				description: "See and download your Google Analytics data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/analytics.edit",
 				description: "Edit Google Analytics management entities",
+			},
+			{
+				id: "https://www.googleapis.com/auth/analytics.manage.users.readonly",
+				description: "View Google Analytics user permissions",
 			},
 			{
 				id: "https://www.googleapis.com/auth/analytics.manage.users",
 				description: "Manage Google Analytics Account users by email address",
 			},
 			{
-				id: "https://www.googleapis.com/auth/analytics.manage.users.readonly",
-				description: "View Google Analytics user permissions",
+				id: "https://www.googleapis.com/auth/analytics.readonly",
+				description: "See and download your Google Analytics data",
 			},
 		],
 	},
@@ -880,9 +880,9 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/appengine/docs/admin-api/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
+				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/appengine.admin",
@@ -890,9 +890,9 @@ export const GOOGLE_APIS = [
 					"View and manage your applications deployed on Google App Engine",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
+				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
-					"View your data across Google Cloud services and see the email address of your Google Account",
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -905,6 +905,11 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/appengine/docs/admin-api/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
 				id: "https://www.googleapis.com/auth/appengine.admin",
 				description:
 					"View and manage your applications deployed on Google App Engine",
@@ -913,11 +918,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -930,6 +930,11 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/appengine/docs/admin-api/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
 				id: "https://www.googleapis.com/auth/appengine.admin",
 				description:
 					"View and manage your applications deployed on Google App Engine",
@@ -938,11 +943,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -1049,14 +1049,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/artifacts/docs/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -1359,14 +1359,14 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/bigquery/docs/column-data-masking",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/bigquery",
 				description:
 					"View and manage your data in Google BigQuery and see the email address for your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -1380,14 +1380,14 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/bigquery/docs/column-data-masking",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/bigquery",
-				description:
-					"View and manage your data in Google BigQuery and see the email address for your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/bigquery",
+				description:
+					"View and manage your data in Google BigQuery and see the email address for your Google Account",
 			},
 		],
 	},
@@ -1401,11 +1401,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/bigquery-transfer/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/bigquery",
 				description:
 					"View and manage your data in Google BigQuery and see the email address for your Google Account",
@@ -1414,6 +1409,11 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -1518,14 +1518,14 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/billing/docs/how-to/budget-api-overview",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-billing",
 				description:
 					"View and manage your Google Cloud Platform billing accounts",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -1631,17 +1631,28 @@ export const GOOGLE_APIS = [
 		documentationLink: "http://code.google.com/apis/calendar/v3/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/calendar",
+				description:
+					"See, edit, share, and permanently delete all the calendars you can access using Google Calendar",
+			},
+			{
 				id: "https://www.googleapis.com/auth/calendar.calendarlist.readonly",
 				description: "See the list of Google calendars you’re subscribed to",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar.events.readonly",
-				description: "View events on all your calendars",
+				id: "https://www.googleapis.com/auth/calendar.calendars.readonly",
+				description:
+					"See the title, description, default time zone, and other properties of Google calendars you have access to",
 			},
 			{
 				id: "https://www.googleapis.com/auth/calendar.calendars",
 				description:
 					"See and change the properties of Google calendars you have access to, and create secondary calendars",
+			},
+			{
+				id: "https://www.googleapis.com/auth/calendar.calendarlist",
+				description:
+					"See, add, and remove Google calendars you’re subscribed to",
 			},
 			{
 				id: "https://www.googleapis.com/auth/calendar.events",
@@ -1653,26 +1664,8 @@ export const GOOGLE_APIS = [
 					"See, create, change, and delete events on Google calendars you own",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar.events.owned.readonly",
-				description: "See the events on Google calendars you own",
-			},
-			{
-				id: "https://www.googleapis.com/auth/calendar.events.public.readonly",
-				description: "See the events on public calendars",
-			},
-			{
-				id: "https://www.googleapis.com/auth/calendar.readonly",
-				description:
-					"See and download any calendar you can access using your Google Calendar",
-			},
-			{
-				id: "https://www.googleapis.com/auth/calendar.events.freebusy",
-				description:
-					"See the availability on Google calendars you have access to",
-			},
-			{
-				id: "https://www.googleapis.com/auth/calendar.freebusy",
-				description: "View your availability in your calendars",
+				id: "https://www.googleapis.com/auth/calendar.events.readonly",
+				description: "View events on all your calendars",
 			},
 			{
 				id: "https://www.googleapis.com/auth/calendar.acls",
@@ -1680,18 +1673,17 @@ export const GOOGLE_APIS = [
 					"See and change the sharing permissions of Google calendars you own",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar.calendarlist",
-				description:
-					"See, add, and remove Google calendars you’re subscribed to",
+				id: "https://www.googleapis.com/auth/calendar.events.public.readonly",
+				description: "See the events on public calendars",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar.calendars.readonly",
-				description:
-					"See the title, description, default time zone, and other properties of Google calendars you have access to",
+				id: "https://www.googleapis.com/auth/calendar.freebusy",
+				description: "View your availability in your calendars",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar.acls.readonly",
-				description: "See the sharing permissions of Google calendars you own",
+				id: "https://www.googleapis.com/auth/calendar.readonly",
+				description:
+					"See and download any calendar you can access using your Google Calendar",
 			},
 			{
 				id: "https://www.googleapis.com/auth/calendar.app.created",
@@ -1699,13 +1691,21 @@ export const GOOGLE_APIS = [
 					"Make secondary Google calendars, and see, create, change, and delete events on them",
 			},
 			{
+				id: "https://www.googleapis.com/auth/calendar.events.freebusy",
+				description:
+					"See the availability on Google calendars you have access to",
+			},
+			{
+				id: "https://www.googleapis.com/auth/calendar.events.owned.readonly",
+				description: "See the events on Google calendars you own",
+			},
+			{
 				id: "https://www.googleapis.com/auth/calendar.settings.readonly",
 				description: "View your Calendar settings",
 			},
 			{
-				id: "https://www.googleapis.com/auth/calendar",
-				description:
-					"See, edit, share, and permanently delete all the calendars you can access using Google Calendar",
+				id: "https://www.googleapis.com/auth/calendar.acls.readonly",
+				description: "See the sharing permissions of Google calendars you own",
 			},
 		],
 	},
@@ -1773,33 +1773,9 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/chat",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/chat.app.spaces.readonly",
+				id: "https://www.googleapis.com/auth/chat.memberships",
 				description:
-					"On their own behalf, apps in Google Chat can see conversations and spaces and their metadata (including history settings and access settings)",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.messages.reactions.readonly",
-				description:
-					"View reactions as well as their reaction content to messages in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.spaces.create",
-				description: "Create new conversations and spaces in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.users.sections.readonly",
-				description:
-					"View your sections and their section items in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.bot",
-				description:
-					"Private Service: https://www.googleapis.com/auth/chat.bot",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.messages.reactions",
-				description:
-					"See, add, and delete reactions as well as their reaction content to messages in Google Chat",
+					"See, add, update, and remove members from conversations and spaces in Google Chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.admin.memberships",
@@ -1807,70 +1783,18 @@ export const GOOGLE_APIS = [
 					"View, add, update and remove members and managers in conversations owned by your organization",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.memberships",
+				id: "https://www.googleapis.com/auth/chat.app.messages.readonly",
 				description:
-					"See, add, update, and remove members from conversations and spaces in Google Chat",
+					"On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.users.spacesettings",
-				description: "Read and update your space settings",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.app.spaces",
+				id: "https://www.googleapis.com/auth/chat.bot",
 				description:
-					"On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings)",
+					"Private Service: https://www.googleapis.com/auth/chat.bot",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.messages.readonly",
-				description:
-					"See messages as well as their reactions and message content in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.admin.memberships.readonly",
-				description:
-					"View members and managers in conversations owned by your organization",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.messages.reactions.create",
-				description: "Add reactions to messages in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.customemojis.readonly",
-				description: "View custom emoji in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.admin.delete",
-				description:
-					"Delete conversations and spaces owned by your organization and remove access to associated files in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.users.readstate",
-				description:
-					"View and modify last read time for Google Chat conversations",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.messages",
-				description:
-					"See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.users.sections",
-				description:
-					"View, create, update, and delete your sections in Google Chat; move and list your section items in Google Chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.app.memberships",
-				description:
-					"On their own behalf, apps in Google Chat can see, add, update, and remove members from conversations and spaces",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.import",
-				description:
-					"Import spaces, messages, and memberships into Google Chat.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.memberships.readonly",
-				description: "View members in Google Chat conversations.",
+				id: "https://www.googleapis.com/auth/chat.messages.create",
+				description: "Compose and send messages in Google Chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.spaces",
@@ -1878,14 +1802,33 @@ export const GOOGLE_APIS = [
 					"Create conversations and spaces and see or update metadata (including history settings and access settings) in Google Chat",
 			},
 			{
+				id: "https://www.googleapis.com/auth/chat.app.spaces",
+				description:
+					"On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings)",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.app.memberships",
+				description:
+					"On their own behalf, apps in Google Chat can see, add, update, and remove members from conversations and spaces",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.users.spacesettings",
+				description: "Read and update your space settings",
+			},
+			{
 				id: "https://www.googleapis.com/auth/chat.app.delete",
 				description:
 					"On their own behalf, apps in Google Chat can delete conversations and spaces and remove access to associated files",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.app.memberships.readonly",
+				id: "https://www.googleapis.com/auth/chat.messages.readonly",
 				description:
-					"On their own behalf, apps in Google Chat can see members of conversations and spaces",
+					"See messages as well as their reactions and message content in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.users.readstate",
+				description:
+					"View and modify last read time for Google Chat conversations",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.app.spaces.create",
@@ -1893,12 +1836,51 @@ export const GOOGLE_APIS = [
 					"On their own behalf, apps in Google Chat can create conversations and spaces",
 			},
 			{
+				id: "https://www.googleapis.com/auth/chat.messages",
+				description:
+					"See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.admin.delete",
+				description:
+					"Delete conversations and spaces owned by your organization and remove access to associated files in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.messages.reactions",
+				description:
+					"See, add, and delete reactions as well as their reaction content to messages in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.spaces.readonly",
+				description: "View chat and spaces in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.messages.reactions.create",
+				description: "Add reactions to messages in Google Chat",
+			},
+			{
 				id: "https://www.googleapis.com/auth/chat.users.readstate.readonly",
 				description: "View last read time for Google Chat conversations",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.messages.create",
-				description: "Compose and send messages in Google Chat",
+				id: "https://www.googleapis.com/auth/chat.users.sections.readonly",
+				description:
+					"View your sections and their section items in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.admin.spaces.readonly",
+				description:
+					"View display name, description, and other metadata for all Google Chat conversations owned by your organization",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.messages.reactions.readonly",
+				description:
+					"View reactions as well as their reaction content to messages in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.memberships.app",
+				description:
+					"Add and remove itself from conversations and spaces in Google Chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.delete",
@@ -1910,8 +1892,9 @@ export const GOOGLE_APIS = [
 				description: "View, create, and delete custom emoji in Google Chat",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.spaces.readonly",
-				description: "View chat and spaces in Google Chat",
+				id: "https://www.googleapis.com/auth/chat.admin.memberships.readonly",
+				description:
+					"View members and managers in conversations owned by your organization",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.admin.spaces",
@@ -1919,19 +1902,36 @@ export const GOOGLE_APIS = [
 					"View or edit display name, description, and other metadata for all Google Chat conversations owned by your organization",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.memberships.app",
-				description:
-					"Add and remove itself from conversations and spaces in Google Chat",
+				id: "https://www.googleapis.com/auth/chat.memberships.readonly",
+				description: "View members in Google Chat conversations.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.app.messages.readonly",
+				id: "https://www.googleapis.com/auth/chat.users.sections",
 				description:
-					"On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content",
+					"View, create, update, and delete your sections in Google Chat; move and list your section items in Google Chat",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.admin.spaces.readonly",
+				id: "https://www.googleapis.com/auth/chat.app.memberships.readonly",
 				description:
-					"View display name, description, and other metadata for all Google Chat conversations owned by your organization",
+					"On their own behalf, apps in Google Chat can see members of conversations and spaces",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.app.spaces.readonly",
+				description:
+					"On their own behalf, apps in Google Chat can see conversations and spaces and their metadata (including history settings and access settings)",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.customemojis.readonly",
+				description: "View custom emoji in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.spaces.create",
+				description: "Create new conversations and spaces in Google Chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.import",
+				description:
+					"Import spaces, messages, and memberships into Google Chat.",
 			},
 		],
 	},
@@ -1959,6 +1959,16 @@ export const GOOGLE_APIS = [
 				description: "See Chrome browser profiles managed by your organization",
 			},
 			{
+				id: "https://www.googleapis.com/auth/chrome.management.telemetry.readonly",
+				description:
+					"See basic device and telemetry information collected from ChromeOS devices or users managed within your organization",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chrome.management.appdetails.readonly",
+				description:
+					"See detailed information about apps installed on Chrome browsers and devices managed by your organization",
+			},
+			{
 				id: "https://www.googleapis.com/auth/chrome.management.reports.readonly",
 				description:
 					"See reports about devices and Chrome browsers managed within your organization",
@@ -1967,16 +1977,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/chrome.management.profiles",
 				description:
 					"See, edit, delete, and take other necessary actions on Chrome browser profiles managed by your organization",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chrome.management.appdetails.readonly",
-				description:
-					"See detailed information about apps installed on Chrome browsers and devices managed by your organization",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chrome.management.telemetry.readonly",
-				description:
-					"See basic device and telemetry information collected from ChromeOS devices or users managed within your organization",
 			},
 		],
 	},
@@ -2043,14 +2043,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developer.chrome.com/docs/webstore/api",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/chromewebstore",
-				description:
-					"See, edit, update, or publish your Chrome Web Store extensions, themes, apps, and licences you have access to",
-			},
-			{
 				id: "https://www.googleapis.com/auth/chromewebstore.readonly",
 				description:
 					"See and download your Chrome Web Store extensions and apps, and see licenses you have access to",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chromewebstore",
+				description:
+					"See, edit, update, or publish your Chrome Web Store extensions, themes, apps, and licences you have access to",
 			},
 		],
 	},
@@ -2074,21 +2074,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/classroom",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/classroom.topics",
-				description: "See, create, and edit topics in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.announcements.readonly",
-				description: "View announcements in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.profile.emails",
-				description: "View the email addresses of people in your classes",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.guardianlinks.students.readonly",
+				id: "https://www.googleapis.com/auth/classroom.courseworkmaterials",
 				description:
-					"View guardians for students in your Google Classroom classes",
+					"See, edit, and create classwork materials in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.coursework.me.readonly",
+				description: "View your course work and grades in Google Classroom",
 			},
 			{
 				id: "https://www.googleapis.com/auth/classroom.student-submissions.students.readonly",
@@ -2096,65 +2088,13 @@ export const GOOGLE_APIS = [
 					"View course work and grades for students in the Google Classroom classes you teach or administer",
 			},
 			{
-				id: "https://www.googleapis.com/auth/classroom.coursework.me",
+				id: "https://www.googleapis.com/auth/classroom.coursework.students.readonly",
 				description:
-					"See, create and edit coursework items including assignments, questions, and grades",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly",
-				description:
-					"See all classwork materials for your Google Classroom classes",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.announcements",
-				description: "View and manage announcements in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.profile.photos",
-				description: "View the profile photos of people in your classes",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.courses.readonly",
-				description: "View your Google Classroom classes",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.coursework.me.readonly",
-				description: "View your course work and grades in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.courseworkmaterials",
-				description:
-					"See, edit, and create classwork materials in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.topics.readonly",
-				description: "View topics in Google Classroom",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.guardianlinks.me.readonly",
-				description: "View your Google Classroom guardians",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.addons.student",
-				description:
-					"See and update its own attachments to posts in Google Classroom",
+					"View course work and grades for students in the Google Classroom classes you teach or administer",
 			},
 			{
 				id: "https://www.googleapis.com/auth/classroom.rosters",
 				description: "Manage your Google Classroom class rosters",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.push-notifications",
-				description: "Receive notifications about your Google Classroom data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.rosters.readonly",
-				description: "View your Google Classroom class rosters",
-			},
-			{
-				id: "https://www.googleapis.com/auth/classroom.courses",
-				description:
-					"See, edit, create, and permanently delete your Google Classroom classes",
 			},
 			{
 				id: "https://www.googleapis.com/auth/classroom.coursework.students",
@@ -2162,9 +2102,51 @@ export const GOOGLE_APIS = [
 					"Manage course work and grades for students in the Google Classroom classes you teach and view the course work and grades for classes you administer",
 			},
 			{
+				id: "https://www.googleapis.com/auth/classroom.push-notifications",
+				description: "Receive notifications about your Google Classroom data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.student-submissions.me.readonly",
+				description: "View your course work and grades in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.courses.readonly",
+				description: "View your Google Classroom classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.coursework.me",
+				description:
+					"See, create and edit coursework items including assignments, questions, and grades",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.profile.emails",
+				description: "View the email addresses of people in your classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.rosters.readonly",
+				description: "View your Google Classroom class rosters",
+			},
+			{
 				id: "https://www.googleapis.com/auth/classroom.addons.teacher",
 				description:
 					"See, create, and update its own attachments to posts in classes you teach in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.announcements",
+				description: "View and manage announcements in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.announcements.readonly",
+				description: "View announcements in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.courseworkmaterials.readonly",
+				description:
+					"See all classwork materials for your Google Classroom classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.guardianlinks.me.readonly",
+				description: "View your Google Classroom guardians",
 			},
 			{
 				id: "https://www.googleapis.com/auth/classroom.guardianlinks.students",
@@ -2172,13 +2154,31 @@ export const GOOGLE_APIS = [
 					"View and manage guardians for students in your Google Classroom classes",
 			},
 			{
-				id: "https://www.googleapis.com/auth/classroom.student-submissions.me.readonly",
-				description: "View your course work and grades in Google Classroom",
+				id: "https://www.googleapis.com/auth/classroom.topics.readonly",
+				description: "View topics in Google Classroom",
 			},
 			{
-				id: "https://www.googleapis.com/auth/classroom.coursework.students.readonly",
+				id: "https://www.googleapis.com/auth/classroom.profile.photos",
+				description: "View the profile photos of people in your classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.guardianlinks.students.readonly",
 				description:
-					"View course work and grades for students in the Google Classroom classes you teach or administer",
+					"View guardians for students in your Google Classroom classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.courses",
+				description:
+					"See, edit, create, and permanently delete your Google Classroom classes",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.addons.student",
+				description:
+					"See and update its own attachments to posts in Google Classroom",
+			},
+			{
+				id: "https://www.googleapis.com/auth/classroom.topics",
+				description: "See, create, and edit topics in Google Classroom",
 			},
 		],
 	},
@@ -2357,12 +2357,12 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/channel",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/apps.order",
-				description: "Manage users on your domain",
-			},
-			{
 				id: "https://www.googleapis.com/auth/apps.reports.usage.readonly",
 				description: "View usage reports for your Google Workspace domain",
+			},
+			{
+				id: "https://www.googleapis.com/auth/apps.order",
+				description: "Manage users on your domain",
 			},
 		],
 	},
@@ -2523,24 +2523,34 @@ export const GOOGLE_APIS = [
 				description: "See your device details",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-identity.devices.readonly",
+				id: "https://www.googleapis.com/auth/cloud-identity.groups",
 				description:
-					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.orgunits",
-				description:
-					"List, Move orgmembers of an OrgUnit in your Cloud Identity Organization.",
+					"See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso",
 				description:
 					"See and edit all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.devices",
+				description:
+					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly",
+				description:
+					"See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.orgunits.readonly",
+				description:
+					"List org members of an OrgUnit in your Cloud Identity Organization.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-identity.policies",
@@ -2552,29 +2562,19 @@ export const GOOGLE_APIS = [
 				description: "See policies in your Cloud Identity Organization.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly",
+				id: "https://www.googleapis.com/auth/cloud-identity.orgunits",
 				description:
-					"See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.devices",
-				description:
-					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.groups",
-				description:
-					"See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.orgunits.readonly",
-				description:
-					"List org members of an OrgUnit in your Cloud Identity Organization.",
+					"List, Move orgmembers of an OrgUnit in your Cloud Identity Organization.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-identity.groups.readonly",
 				description:
 					"See any Cloud Identity Groups that you can access, including group members and their emails",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.devices.readonly",
+				description:
+					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly",
 			},
 		],
 	},
@@ -2587,13 +2587,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/identity/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-identity.groups.readonly",
+				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
-					"See any Cloud Identity Groups that you can access, including group members and their emails",
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-identity.policies.readonly",
-				description: "See policies in your Cloud Identity Organization.",
+				id: "https://www.googleapis.com/auth/cloud-identity.devices",
+				description:
+					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso",
@@ -2601,28 +2602,8 @@ export const GOOGLE_APIS = [
 					"See and edit all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly",
-				description:
-					"See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.policies",
-				description:
-					"See and edit policies in your Cloud Identity Organization.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.devices.lookup",
-				description: "See your device details",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-identity.devices.readonly",
-				description:
-					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly",
+				id: "https://www.googleapis.com/auth/cloud-identity.policies.readonly",
+				description: "See policies in your Cloud Identity Organization.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-identity.groups",
@@ -2630,9 +2611,28 @@ export const GOOGLE_APIS = [
 					"See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-identity.devices",
+				id: "https://www.googleapis.com/auth/cloud-identity.devices.readonly",
 				description:
-					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices",
+					"Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.devices.lookup",
+				description: "See your device details",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.policies",
+				description:
+					"See and edit policies in your Cloud Identity Organization.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.groups.readonly",
+				description:
+					"See any Cloud Identity Groups that you can access, including group members and their emails",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly",
+				description:
+					"See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.",
 			},
 		],
 	},
@@ -2742,14 +2742,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/resource-manager",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -2763,14 +2763,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/resource-manager",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -3011,6 +3011,10 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/trace/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/trace.append",
+				description: "Write Trace data for a project or application",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
@@ -3018,10 +3022,6 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/trace.readonly",
 				description: "Read Trace data for a project or application",
-			},
-			{
-				id: "https://www.googleapis.com/auth/trace.append",
-				description: "Write Trace data for a project or application",
 			},
 		],
 	},
@@ -3039,13 +3039,13 @@ export const GOOGLE_APIS = [
 				description: "Write Trace data for a project or application",
 			},
 			{
-				id: "https://www.googleapis.com/auth/trace.readonly",
-				description: "Read Trace data for a project or application",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/trace.readonly",
+				description: "Read Trace data for a project or application",
 			},
 		],
 	},
@@ -3059,13 +3059,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/trace/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/trace.append",
+				description: "Write Trace data for a project or application",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/trace.append",
-				description: "Write Trace data for a project or application",
 			},
 		],
 	},
@@ -3079,11 +3079,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/composer/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloudcomposer.readonly",
-				description:
-					"See your Google Cloud Composer data and the email address of your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
@@ -3092,6 +3087,11 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/cloudcomposer",
 				description:
 					"See, edit, configure, and delete your Google Cloud Composer data and see the email address for your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloudcomposer.readonly",
+				description:
+					"See your Google Cloud Composer data and the email address of your Google Account",
 			},
 		],
 	},
@@ -3105,9 +3105,9 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/composer/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloudcomposer",
+				id: "https://www.googleapis.com/auth/cloudcomposer.readonly",
 				description:
-					"See, edit, configure, and delete your Google Cloud Composer data and see the email address for your Google Account",
+					"See your Google Cloud Composer data and the email address of your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
@@ -3115,9 +3115,9 @@ export const GOOGLE_APIS = [
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloudcomposer.readonly",
+				id: "https://www.googleapis.com/auth/cloudcomposer",
 				description:
-					"See your Google Cloud Composer data and the email address of your Google Account",
+					"See, edit, configure, and delete your Google Cloud Composer data and see the email address for your Google Account",
 			},
 		],
 	},
@@ -3626,6 +3626,11 @@ export const GOOGLE_APIS = [
 				description:
 					"See, edit, create, import, or delete your customer data in Google Ads, Google Marketing Platform (Campaign Manager 360, Search Ads 360, Display & Video 360), and Google Analytics",
 			},
+			{
+				id: "https://www.googleapis.com/auth/datamanager.partnerlink",
+				description:
+					"View, create, or delete your partner links in Google Ads, Marketing Platform (Campaign Manager 360, Search Ads 360, Display & Video 360), and Analytics",
+			},
 		],
 	},
 	{
@@ -3687,9 +3692,9 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/dataplex/docs",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/dataplex.readonly",
+				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
-					"See your Google Cloud Dataplex data and the email address of your Google Account",
+					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
@@ -3697,14 +3702,14 @@ export const GOOGLE_APIS = [
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
-				description:
-					"View your data across Google Cloud services and see the email address of your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/dataplex.read-write",
 				description:
 					"See, edit, configure, and delete your Google Cloud Dataplex data and see the email address for your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataplex.readonly",
+				description:
+					"See your Google Cloud Dataplex data and the email address of your Google Account",
 			},
 		],
 	},
@@ -3718,285 +3723,20 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/data-portability",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/dataportability.play.playpoints",
-				description:
-					"Move a copy of information about your Google Play Store Points",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.purchases",
-				description: "Move a copy of your Google Play Store purchases",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.public_videos",
-				description:
-					"Move a copy of your public YouTube videos and information about them",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.library",
-				description:
-					"Move a copy of your Google Play Store downloads, including books, games, and apps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.starred_places",
-				description: "Move a copy of your Starred places list on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.promotions",
-				description:
-					"Move a copy of information about your Google Play Store promotions",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.shopping",
-				description:
-					"Move a copy of your YouTube shopping wishlists, and wishlist items",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.history",
-				description: "Move a copy of sites you visited in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.play",
-				description: "Move a copy of your Google Play activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.settings",
-				description: "Move a copy of your settings in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.watched",
-				description:
-					"Move a copy of information about the movies and TV shows you marked as watched on Google Search and Google TV",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.photos_videos",
-				description: "Move a copy of the photos and videos you posted on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.camera_event",
-				description: "Copy Nest camera event data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.vehicle_profile",
-				description: "Move a copy of your vehicle profile on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.clips",
-				description: "Move a copy of your YouTube clips metadata",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_playlists",
-				description: "Move a copy of your unlisted YouTube playlists",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.subscriptions",
-				description:
-					"Move a copy of your notification subscriptions on Google Search app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.user",
-				description: "Copy your Nest user information",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.music",
-				description:
-					"Move a copy of your uploaded YouTube music tracks and your YouTube music library",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.commute_routes",
-				description: "Move a copy of your pinned trips on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.myadcenter",
-				description: "Move a copy of your My Ad Center activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.camera_video",
-				description: "Copy Nest camera footage",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.conversations",
-				description: "Move a copy of all your YouTube messages",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.live_chat",
-				description: "Move a copy of your YouTube messages in live chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.search",
-				description: "Move a copy of your Google Search activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.order_reserve.purchases_reservations",
-				description:
-					"Move a copy of your food purchase and reservation activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.saved.collections",
-				description:
-					"Move a copy of your saved links, images, places, and collections from your use of Google services",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.alerts.subscriptions",
-				description:
-					"Move a copy of the Google Alerts subscriptions you created",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.private_playlists",
-				description: "Move a copy of your YouTube private playlists",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.streetview.imagery",
-				description:
-					"Move a copy of the images and videos you uploaded to Street View",
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.comments",
+				description: "Move a copy of your comments on Google Search",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.nest.camera_feature",
 				description: "Copy Nest camera feature data",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.streaming_video_providers",
-				description:
-					"Move a copy of your self-reported video streaming provider preferences from Google Search and Google TV",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.settings",
-				description:
-					"Move a copy of your notification settings on the Google Search app",
+				id: "https://www.googleapis.com/auth/dataportability.nest.camera_event",
+				description: "Copy Nest camera event data",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.shopping.addresses",
 				description: "Move a copy of your shipping information on Shopping",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.factual_contributions",
-				description:
-					"Move a copy of the corrections you made to places or map information on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.reviews_and_stars",
-				description: "Move a copy of your media reviews on Google Search",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.subscriptions",
-				description: "Move a copy of your Google Play Store subscriptions",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.channel",
-				description: "Move a copy of information about your YouTube channel",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.extensions",
-				description:
-					"Move a copy of extensions you installed from the Chrome Web Store",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.discover.not_interested",
-				description:
-					"Move a copy of content you marked as not interested, saved by Discover",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_videos",
-				description:
-					"Move a copy of your unlisted YouTube videos and information about them",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.reading_list",
-				description:
-					"Move a copy of pages you added to your reading list in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.ev_profile",
-				description: "Move a copy of your electric vehicle profile on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.youtube",
-				description: "Move a copy of your YouTube activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.shopping.reviews",
-				description:
-					"Move a copy of reviews you wrote about products or online stores on Google Search",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.comments",
-				description: "Move a copy of your comments on Google Search",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.posts",
-				description: "Move a copy of your YouTube posts",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.shopping",
-				description: "Move a copy of your Shopping activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.reviews",
-				description: "Move a copy of your reviews and posts on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.thumbs",
-				description:
-					"Move a copy of your indicated thumbs up and thumbs down on media in Google Search and Google TV",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.subscriptions",
-				description:
-					"Move a copy of your YouTube channel subscriptions, even if they're private",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.playable",
-				description:
-					"Move a copy of your YouTube playables saved game progress files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.questions_answers",
-				description:
-					"Move a copy of the questions and answers you posted on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.grouping",
-				description:
-					"Move a copy of your Google Play Store Grouping tags created by app developers",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.private_videos",
-				description:
-					"Move a copy of your private YouTube videos and information about them",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.redemptions",
-				description:
-					"Move a copy of your Google Play Store redemption activities",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.usersettings",
-				description:
-					"Move a copy of your Google Play Store user settings and preferences",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.comments",
-				description: "Move a copy of your YouTube comments",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.installs",
-				description: "Move a copy of your Google Play Store app installations",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.offering_contributions",
-				description: "Move a copy of your updates to places on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.dictionary",
-				description: "Move a copy of words you added to Chrome's dictionary",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.autofill",
-				description:
-					"Move a copy of the information you entered into online forms in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.public_playlists",
-				description: "Move a copy of your public YouTube playlists",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.discover.likes",
@@ -4004,8 +3744,42 @@ export const GOOGLE_APIS = [
 					"Move a copy of links to your liked documents, saved by Discover",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.maps",
-				description: "Move a copy of your Maps activity",
+				id: "https://www.googleapis.com/auth/dataportability.maps.aliased_places",
+				description: "Move a copy of the places you labeled on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.grouping",
+				description:
+					"Move a copy of your Google Play Store Grouping tags created by app developers",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_videos",
+				description:
+					"Move a copy of your unlisted YouTube videos and information about them",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.private_playlists",
+				description: "Move a copy of your YouTube private playlists",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.discover.not_interested",
+				description:
+					"Move a copy of content you marked as not interested, saved by Discover",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.order_reserve.purchases_reservations",
+				description:
+					"Move a copy of your food purchase and reservation activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.usersettings",
+				description:
+					"Move a copy of your Google Play Store user settings and preferences",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.playable",
+				description:
+					"Move a copy of your YouTube playables saved game progress files",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.nest.store",
@@ -4013,12 +3787,47 @@ export const GOOGLE_APIS = [
 					"Copy your Nest Store and Nest Renew billing and payment information",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.mymaps.maps",
-				description: "Move a copy of the maps you created in My Maps",
+				id: "https://www.googleapis.com/auth/dataportability.chrome.autofill",
+				description:
+					"Move a copy of the information you entered into online forms in Chrome",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.commute_settings",
-				description: "Move a copy of your commute settings on Maps",
+				id: "https://www.googleapis.com/auth/dataportability.nest.camera_video",
+				description: "Copy Nest camera footage",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.thumbs",
+				description:
+					"Move a copy of your indicated thumbs up and thumbs down on media in Google Search and Google TV",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.channel",
+				description: "Move a copy of information about your YouTube channel",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.photos_videos",
+				description: "Move a copy of the photos and videos you posted on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.play",
+				description: "Move a copy of your Google Play activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.subscriptions",
+				description: "Move a copy of your Google Play Store subscriptions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.maps",
+				description: "Move a copy of your Maps activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.promotions",
+				description:
+					"Move a copy of information about your Google Play Store promotions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.purchases",
+				description: "Move a copy of your Google Play Store purchases",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.play.devices",
@@ -4026,17 +3835,213 @@ export const GOOGLE_APIS = [
 					"Move a copy of information about your devices with Google Play Store installed",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.aliased_places",
-				description: "Move a copy of the places you labeled on Maps",
+				id: "https://www.googleapis.com/auth/dataportability.saved.collections",
+				description:
+					"Move a copy of your saved links, images, places, and collections from your use of Google services",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.conversations",
+				description: "Move a copy of all your YouTube messages",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.commute_routes",
+				description: "Move a copy of your pinned trips on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.discover.follows",
+				description:
+					"Move a copy of searches and sites you follow, saved by Discover",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.streetview.imagery",
+				description:
+					"Move a copy of the images and videos you uploaded to Street View",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.extensions",
+				description:
+					"Move a copy of extensions you installed from the Chrome Web Store",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_playlists",
+				description: "Move a copy of your unlisted YouTube playlists",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.live_chat",
+				description: "Move a copy of your YouTube messages in live chat",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.vehicle_profile",
+				description: "Move a copy of your vehicle profile on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.public_playlists",
+				description: "Move a copy of your public YouTube playlists",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.offering_contributions",
+				description: "Move a copy of your updates to places on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.watched",
+				description:
+					"Move a copy of information about the movies and TV shows you marked as watched on Google Search and Google TV",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.subscriptions",
+				description:
+					"Move a copy of your notification subscriptions on Google Search app",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.factual_contributions",
+				description:
+					"Move a copy of the corrections you made to places or map information on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.redemptions",
+				description:
+					"Move a copy of your Google Play Store redemption activities",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.posts",
+				description: "Move a copy of your YouTube posts",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.starred_places",
+				description: "Move a copy of your Starred places list on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.shopping",
+				description: "Move a copy of your Shopping activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.questions_answers",
+				description:
+					"Move a copy of the questions and answers you posted on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.library",
+				description:
+					"Move a copy of your Google Play Store downloads, including books, games, and apps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.shopping.reviews",
+				description:
+					"Move a copy of reviews you wrote about products or online stores on Google Search",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.nest.user",
+				description: "Copy your Nest user information",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.subscriptions",
+				description:
+					"Move a copy of your YouTube channel subscriptions, even if they're private",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.reading_list",
+				description:
+					"Move a copy of pages you added to your reading list in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.public_videos",
+				description:
+					"Move a copy of your public YouTube videos and information about them",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.installs",
+				description: "Move a copy of your Google Play Store app installations",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.settings",
+				description:
+					"Move a copy of your notification settings on the Google Search app",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.reviews_and_stars",
+				description: "Move a copy of your media reviews on Google Search",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.ev_profile",
+				description: "Move a copy of your electric vehicle profile on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.playpoints",
+				description:
+					"Move a copy of information about your Google Play Store Points",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.clips",
+				description: "Move a copy of your YouTube clips metadata",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.music",
+				description:
+					"Move a copy of your uploaded YouTube music tracks and your YouTube music library",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.alerts.subscriptions",
+				description:
+					"Move a copy of the Google Alerts subscriptions you created",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.mymaps.maps",
+				description: "Move a copy of the maps you created in My Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.history",
+				description: "Move a copy of sites you visited in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.search",
+				description: "Move a copy of your Google Search activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.private_videos",
+				description:
+					"Move a copy of your private YouTube videos and information about them",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.dictionary",
+				description: "Move a copy of words you added to Chrome's dictionary",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.reviews",
+				description: "Move a copy of your reviews and posts on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.comments",
+				description: "Move a copy of your YouTube comments",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.chrome.bookmarks",
 				description: "Move a copy of pages you bookmarked in Chrome",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.discover.follows",
+				id: "https://www.googleapis.com/auth/dataportability.maps.commute_settings",
+				description: "Move a copy of your commute settings on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.shopping",
 				description:
-					"Move a copy of searches and sites you follow, saved by Discover",
+					"Move a copy of your YouTube shopping wishlists, and wishlist items",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.streaming_video_providers",
+				description:
+					"Move a copy of your self-reported video streaming provider preferences from Google Search and Google TV",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.settings",
+				description: "Move a copy of your settings in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.myadcenter",
+				description: "Move a copy of your My Ad Center activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.youtube",
+				description: "Move a copy of your YouTube activity",
 			},
 		],
 	},
@@ -4050,54 +4055,38 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/data-portability",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.music",
+				id: "https://www.googleapis.com/auth/dataportability.nest.camera_feature",
+				description: "Copy Nest camera feature data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.streaming_video_providers",
 				description:
-					"Move a copy of your uploaded YouTube music tracks and your YouTube music library",
+					"Move a copy of your self-reported video streaming provider preferences from Google Search and Google TV",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.alerts.subscriptions",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.public_playlists",
+				description: "Move a copy of your public YouTube playlists",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.history",
+				description: "Move a copy of sites you visited in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.factual_contributions",
 				description:
-					"Move a copy of the Google Alerts subscriptions you created",
+					"Move a copy of the corrections you made to places or map information on Maps",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.ev_profile",
-				description: "Move a copy of your electric vehicle profile on Maps",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.private_playlists",
+				description: "Move a copy of your YouTube private playlists",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.play.installs",
-				description: "Move a copy of your Google Play Store app installations",
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.comments",
+				description: "Move a copy of your comments on Google Search",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.play.playpoints",
-				description:
-					"Move a copy of information about your Google Play Store Points",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.thumbs",
-				description:
-					"Move a copy of your indicated thumbs up and thumbs down on media in Google Search and Google TV",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.reading_list",
-				description:
-					"Move a copy of pages you added to your reading list in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.maps",
-				description: "Move a copy of your Maps activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.questions_answers",
-				description:
-					"Move a copy of the questions and answers you posted on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.live_chat",
-				description: "Move a copy of your YouTube messages in live chat",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.youtube",
-				description: "Move a copy of your YouTube activity",
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.shopping",
+				description: "Move a copy of your Shopping activity",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.play.devices",
@@ -4105,27 +4094,22 @@ export const GOOGLE_APIS = [
 					"Move a copy of information about your devices with Google Play Store installed",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.settings",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_videos",
 				description:
-					"Move a copy of your notification settings on the Google Search app",
+					"Move a copy of your unlisted YouTube videos and information about them",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.saved.collections",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_playlists",
+				description: "Move a copy of your unlisted YouTube playlists",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.library",
 				description:
-					"Move a copy of your saved links, images, places, and collections from your use of Google services",
+					"Move a copy of your Google Play Store downloads, including books, games, and apps",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.private_playlists",
-				description: "Move a copy of your YouTube private playlists",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.reviews",
-				description: "Move a copy of your reviews and posts on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.shopping.reviews",
-				description:
-					"Move a copy of reviews you wrote about products or online stores on Google Search",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.clips",
+				description: "Move a copy of your YouTube clips metadata",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.youtube.shopping",
@@ -4133,78 +4117,21 @@ export const GOOGLE_APIS = [
 					"Move a copy of your YouTube shopping wishlists, and wishlist items",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.search",
-				description: "Move a copy of your Google Search activity",
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.maps",
+				description: "Move a copy of your Maps activity",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.watched",
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.thumbs",
 				description:
-					"Move a copy of information about the movies and TV shows you marked as watched on Google Search and Google TV",
+					"Move a copy of your indicated thumbs up and thumbs down on media in Google Search and Google TV",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.posts",
-				description: "Move a copy of your YouTube posts",
+				id: "https://www.googleapis.com/auth/dataportability.mymaps.maps",
+				description: "Move a copy of the maps you created in My Maps",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.starred_places",
-				description: "Move a copy of your Starred places list on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.purchases",
-				description: "Move a copy of your Google Play Store purchases",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.subscriptions",
-				description:
-					"Move a copy of your YouTube channel subscriptions, even if they're private",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.conversations",
-				description: "Move a copy of all your YouTube messages",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.settings",
-				description: "Move a copy of your settings in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.autofill",
-				description:
-					"Move a copy of the information you entered into online forms in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.usersettings",
-				description:
-					"Move a copy of your Google Play Store user settings and preferences",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.streetview.imagery",
-				description:
-					"Move a copy of the images and videos you uploaded to Street View",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.comments",
-				description: "Move a copy of your YouTube comments",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.clips",
-				description: "Move a copy of your YouTube clips metadata",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_videos",
-				description:
-					"Move a copy of your unlisted YouTube videos and information about them",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.comments",
-				description: "Move a copy of your comments on Google Search",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.aliased_places",
-				description: "Move a copy of the places you labeled on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.shopping.addresses",
-				description: "Move a copy of your shipping information on Shopping",
+				id: "https://www.googleapis.com/auth/dataportability.nest.user",
+				description: "Copy your Nest user information",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.discover.likes",
@@ -4212,8 +4139,154 @@ export const GOOGLE_APIS = [
 					"Move a copy of links to your liked documents, saved by Discover",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.camera_feature",
-				description: "Copy Nest camera feature data",
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.search",
+				description: "Move a copy of your Google Search activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.autofill",
+				description:
+					"Move a copy of the information you entered into online forms in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.grouping",
+				description:
+					"Move a copy of your Google Play Store Grouping tags created by app developers",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.discover.not_interested",
+				description:
+					"Move a copy of content you marked as not interested, saved by Discover",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.streetview.imagery",
+				description:
+					"Move a copy of the images and videos you uploaded to Street View",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.nest.store",
+				description:
+					"Copy your Nest Store and Nest Renew billing and payment information",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.public_videos",
+				description:
+					"Move a copy of your public YouTube videos and information about them",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.saved.collections",
+				description:
+					"Move a copy of your saved links, images, places, and collections from your use of Google services",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.posts",
+				description: "Move a copy of your YouTube posts",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.redemptions",
+				description:
+					"Move a copy of your Google Play Store redemption activities",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.ev_profile",
+				description: "Move a copy of your electric vehicle profile on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.photos_videos",
+				description: "Move a copy of the photos and videos you posted on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.playable",
+				description:
+					"Move a copy of your YouTube playables saved game progress files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.usersettings",
+				description:
+					"Move a copy of your Google Play Store user settings and preferences",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.nest.camera_video",
+				description: "Copy Nest camera footage",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.starred_places",
+				description: "Move a copy of your Starred places list on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.subscriptions",
+				description: "Move a copy of your Google Play Store subscriptions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.bookmarks",
+				description: "Move a copy of pages you bookmarked in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.reviews",
+				description: "Move a copy of your reviews and posts on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.private_videos",
+				description:
+					"Move a copy of your private YouTube videos and information about them",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.myadcenter",
+				description: "Move a copy of your My Ad Center activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.play",
+				description: "Move a copy of your Google Play activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.reading_list",
+				description:
+					"Move a copy of pages you added to your reading list in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.discover.follows",
+				description:
+					"Move a copy of searches and sites you follow, saved by Discover",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.vehicle_profile",
+				description: "Move a copy of your vehicle profile on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.music",
+				description:
+					"Move a copy of your uploaded YouTube music tracks and your YouTube music library",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.shopping.reviews",
+				description:
+					"Move a copy of reviews you wrote about products or online stores on Google Search",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.alerts.subscriptions",
+				description:
+					"Move a copy of the Google Alerts subscriptions you created",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.watched",
+				description:
+					"Move a copy of information about the movies and TV shows you marked as watched on Google Search and Google TV",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.dictionary",
+				description: "Move a copy of words you added to Chrome's dictionary",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.shopping.addresses",
+				description: "Move a copy of your shipping information on Shopping",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.channel",
+				description: "Move a copy of information about your YouTube channel",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.settings",
+				description:
+					"Move a copy of your notification settings on the Google Search app",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.chrome.extensions",
@@ -4221,9 +4294,46 @@ export const GOOGLE_APIS = [
 					"Move a copy of extensions you installed from the Chrome Web Store",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.factual_contributions",
+				id: "https://www.googleapis.com/auth/dataportability.maps.aliased_places",
+				description: "Move a copy of the places you labeled on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.offering_contributions",
+				description: "Move a copy of your updates to places on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.chrome.settings",
+				description: "Move a copy of your settings in Chrome",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.playpoints",
 				description:
-					"Move a copy of the corrections you made to places or map information on Maps",
+					"Move a copy of information about your Google Play Store Points",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.comments",
+				description: "Move a copy of your YouTube comments",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.maps.questions_answers",
+				description:
+					"Move a copy of the questions and answers you posted on Maps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.play.purchases",
+				description: "Move a copy of your Google Play Store purchases",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.myactivity.youtube",
+				description: "Move a copy of your YouTube activity",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.conversations",
+				description: "Move a copy of all your YouTube messages",
+			},
+			{
+				id: "https://www.googleapis.com/auth/dataportability.youtube.live_chat",
+				description: "Move a copy of your YouTube messages in live chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.play.promotions",
@@ -4235,98 +4345,25 @@ export const GOOGLE_APIS = [
 				description: "Move a copy of your pinned trips on Maps",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.playable",
-				description:
-					"Move a copy of your YouTube playables saved game progress files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.history",
-				description: "Move a copy of sites you visited in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.dictionary",
-				description: "Move a copy of words you added to Chrome's dictionary",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.grouping",
-				description:
-					"Move a copy of your Google Play Store Grouping tags created by app developers",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.photos_videos",
-				description: "Move a copy of the photos and videos you posted on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.mymaps.maps",
-				description: "Move a copy of the maps you created in My Maps",
-			},
-			{
 				id: "https://www.googleapis.com/auth/dataportability.maps.commute_settings",
 				description: "Move a copy of your commute settings on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.camera_event",
-				description: "Copy Nest camera event data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.redemptions",
-				description:
-					"Move a copy of your Google Play Store redemption activities",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.channel",
-				description: "Move a copy of information about your YouTube channel",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.reviews_and_stars",
 				description: "Move a copy of your media reviews on Google Search",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.discover.not_interested",
+				id: "https://www.googleapis.com/auth/dataportability.youtube.subscriptions",
 				description:
-					"Move a copy of content you marked as not interested, saved by Discover",
+					"Move a copy of your YouTube channel subscriptions, even if they're private",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.myadcenter",
-				description: "Move a copy of your My Ad Center activity",
+				id: "https://www.googleapis.com/auth/dataportability.play.installs",
+				description: "Move a copy of your Google Play Store app installations",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.shopping",
-				description: "Move a copy of your Shopping activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.chrome.bookmarks",
-				description: "Move a copy of pages you bookmarked in Chrome",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.myactivity.play",
-				description: "Move a copy of your Google Play activity",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.camera_video",
-				description: "Copy Nest camera footage",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.subscriptions",
-				description: "Move a copy of your Google Play Store subscriptions",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.user",
-				description: "Copy your Nest user information",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.discover.follows",
-				description:
-					"Move a copy of searches and sites you follow, saved by Discover",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.unlisted_playlists",
-				description: "Move a copy of your unlisted YouTube playlists",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.private_videos",
-				description:
-					"Move a copy of your private YouTube videos and information about them",
+				id: "https://www.googleapis.com/auth/dataportability.nest.camera_event",
+				description: "Copy Nest camera event data",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dataportability.order_reserve.purchases_reservations",
@@ -4334,41 +4371,9 @@ export const GOOGLE_APIS = [
 					"Move a copy of your food purchase and reservation activity",
 			},
 			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.public_videos",
-				description:
-					"Move a copy of your public YouTube videos and information about them",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.play.library",
-				description:
-					"Move a copy of your Google Play Store downloads, including books, games, and apps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.search_ugc.media.streaming_video_providers",
-				description:
-					"Move a copy of your self-reported video streaming provider preferences from Google Search and Google TV",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.offering_contributions",
-				description: "Move a copy of your updates to places on Maps",
-			},
-			{
 				id: "https://www.googleapis.com/auth/dataportability.searchnotifications.subscriptions",
 				description:
 					"Move a copy of your notification subscriptions on Google Search app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.maps.vehicle_profile",
-				description: "Move a copy of your vehicle profile on Maps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.nest.store",
-				description:
-					"Copy your Nest Store and Nest Renew billing and payment information",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dataportability.youtube.public_playlists",
-				description: "Move a copy of your public YouTube playlists",
 			},
 		],
 	},
@@ -4408,13 +4413,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/datastore/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/datastore",
-				description: "View and manage your Google Cloud Datastore data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/datastore",
+				description: "View and manage your Google Cloud Datastore data",
 			},
 		],
 	},
@@ -4428,13 +4433,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/datastore/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/datastore",
-				description: "View and manage your Google Cloud Datastore data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/datastore",
+				description: "View and manage your Google Cloud Datastore data",
 			},
 		],
 	},
@@ -4614,6 +4619,22 @@ export const GOOGLE_APIS = [
 		],
 	},
 	{
+		version: "v1",
+		title: "Developer Knowledge API",
+		description:
+			"The Developer Knowledge API provides access to Google's developer knowledge.",
+		discoveryRestUrl:
+			"https://developerknowledge.googleapis.com/$discovery/rest?version=v1",
+		documentationLink: "https://developers.google.com/knowledge",
+		scopes: [
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+		],
+	},
+	{
 		version: "v3.5",
 		title: "Campaign Manager 360 API",
 		description:
@@ -4639,6 +4660,10 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/doubleclick-advertisers/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/dfareporting",
+				description: "View and manage DoubleClick for Advertisers reports",
+			},
+			{
 				id: "https://www.googleapis.com/auth/ddmconversions",
 				description: "Manage DoubleClick Digital Marketing conversions",
 			},
@@ -4646,10 +4671,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/dfatrafficking",
 				description:
 					"View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns",
-			},
-			{
-				id: "https://www.googleapis.com/auth/dfareporting",
-				description: "View and manage DoubleClick for Advertisers reports",
 			},
 		],
 	},
@@ -4663,17 +4684,17 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/doubleclick-advertisers/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/dfatrafficking",
-				description:
-					"View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns",
+				id: "https://www.googleapis.com/auth/ddmconversions",
+				description: "Manage DoubleClick Digital Marketing conversions",
 			},
 			{
 				id: "https://www.googleapis.com/auth/dfareporting",
 				description: "View and manage DoubleClick for Advertisers reports",
 			},
 			{
-				id: "https://www.googleapis.com/auth/ddmconversions",
-				description: "Manage DoubleClick Digital Marketing conversions",
+				id: "https://www.googleapis.com/auth/dfatrafficking",
+				description:
+					"View and manage your DoubleClick Campaign Manager's (DCM) display ad campaigns",
 			},
 		],
 	},
@@ -4787,14 +4808,9 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/generative-ai-app-builder/docs/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud_search.query",
+				id: "https://www.googleapis.com/auth/discoveryengine.readwrite",
 				description:
-					"Search your organization's data in the Cloud Search index",
-			},
-			{
-				id: "https://www.googleapis.com/auth/discoveryengine.assist.readwrite",
-				description:
-					"View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.",
+					"View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/discoveryengine.serving.readwrite",
@@ -4802,14 +4818,19 @@ export const GOOGLE_APIS = [
 					"Interact with Discovery Engine API products, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, on your behalf. It will also allow the app to view all data that you have access to when you use or interact with a Discovery Engine API product.",
 			},
 			{
+				id: "https://www.googleapis.com/auth/cloud_search.query",
+				description:
+					"Search your organization's data in the Cloud Search index",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/discoveryengine.readwrite",
+				id: "https://www.googleapis.com/auth/discoveryengine.assist.readwrite",
 				description:
-					"View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.",
+					"View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.",
 			},
 		],
 	},
@@ -4823,9 +4844,9 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/generative-ai-app-builder/docs/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/discoveryengine.readwrite",
+				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
-					"View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.",
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/discoveryengine.assist.readwrite",
@@ -4833,19 +4854,19 @@ export const GOOGLE_APIS = [
 					"View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.",
 			},
 			{
+				id: "https://www.googleapis.com/auth/cloud_search.query",
+				description:
+					"Search your organization's data in the Cloud Search index",
+			},
+			{
 				id: "https://www.googleapis.com/auth/discoveryengine.serving.readwrite",
 				description:
 					"Interact with Discovery Engine API products, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, on your behalf. It will also allow the app to view all data that you have access to when you use or interact with a Discovery Engine API product.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
+				id: "https://www.googleapis.com/auth/discoveryengine.readwrite",
 				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud_search.query",
-				description:
-					"Search your organization's data in the Cloud Search index",
+					"View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.",
 			},
 		],
 	},
@@ -4859,9 +4880,9 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/generative-ai-app-builder/docs/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud_search.query",
+				id: "https://www.googleapis.com/auth/discoveryengine.assist.readwrite",
 				description:
-					"Search your organization's data in the Cloud Search index",
+					"View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
@@ -4869,14 +4890,14 @@ export const GOOGLE_APIS = [
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/discoveryengine.assist.readwrite",
-				description:
-					"View your Agentspace chat history, including uploaded files and generated reports and visualizations, and interact with the Agentspace assistant on your behalf.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/discoveryengine.readwrite",
 				description:
 					"View, edit, create, and delete all your data associated with any Discovery Engine API product, such as Agentspace, Vertex AI Search, or NotebookLM Enterprise, including both end user data and administration or configuration data.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud_search.query",
+				description:
+					"Search your organization's data in the Cloud Search index",
 			},
 			{
 				id: "https://www.googleapis.com/auth/discoveryengine.serving.readwrite",
@@ -4925,23 +4946,23 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/display-video/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/display-video-mediaplanning",
-				description:
-					"Create, see, and edit Display & Video 360 Campaign entities and see billing invoices",
-			},
-			{
-				id: "https://www.googleapis.com/auth/doubleclickbidmanager",
-				description: "View and manage your reports in DoubleClick Bid Manager",
-			},
-			{
 				id: "https://www.googleapis.com/auth/display-video",
 				description:
 					"Create, see, edit, and permanently delete your Display & Video 360 entities and reports",
 			},
 			{
+				id: "https://www.googleapis.com/auth/display-video-mediaplanning",
+				description:
+					"Create, see, and edit Display & Video 360 Campaign entities and see billing invoices",
+			},
+			{
 				id: "https://www.googleapis.com/auth/display-video-user-management",
 				description:
 					"Private Service: https://www.googleapis.com/auth/display-video-user-management",
+			},
+			{
+				id: "https://www.googleapis.com/auth/doubleclickbidmanager",
+				description: "View and manage your reports in DoubleClick Bid Manager",
 			},
 		],
 	},
@@ -4955,23 +4976,23 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/display-video/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/doubleclickbidmanager",
-				description: "View and manage your reports in DoubleClick Bid Manager",
-			},
-			{
-				id: "https://www.googleapis.com/auth/display-video",
-				description:
-					"Create, see, edit, and permanently delete your Display & Video 360 entities and reports",
-			},
-			{
 				id: "https://www.googleapis.com/auth/display-video-user-management",
 				description:
 					"Private Service: https://www.googleapis.com/auth/display-video-user-management",
 			},
 			{
+				id: "https://www.googleapis.com/auth/doubleclickbidmanager",
+				description: "View and manage your reports in DoubleClick Bid Manager",
+			},
+			{
 				id: "https://www.googleapis.com/auth/display-video-mediaplanning",
 				description:
 					"Create, see, and edit Display & Video 360 Campaign entities and see billing invoices",
+			},
+			{
+				id: "https://www.googleapis.com/auth/display-video",
+				description:
+					"Create, see, edit, and permanently delete your Display & Video 360 entities and reports",
 			},
 		],
 	},
@@ -5000,23 +5021,23 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/dns/docs",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
-				description:
-					"View your data across Google Cloud services and see the email address of your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/ndev.clouddns.readonly",
-				description: "View your DNS records hosted by Google Cloud DNS",
+				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
+				description:
+					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/ndev.clouddns.readwrite",
 				description:
 					"View and manage your DNS records hosted by Google Cloud DNS",
+			},
+			{
+				id: "https://www.googleapis.com/auth/ndev.clouddns.readonly",
+				description: "View your DNS records hosted by Google Cloud DNS",
 			},
 		],
 	},
@@ -5028,18 +5049,18 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/dns/docs",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
+				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
-					"View your data across Google Cloud services and see the email address of your Google Account",
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/ndev.clouddns.readonly",
 				description: "View your DNS records hosted by Google Cloud DNS",
 			},
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
+				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/ndev.clouddns.readwrite",
@@ -5056,6 +5077,20 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/docs/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/documents",
+				description:
+					"See, edit, create, and delete all your Google Docs documents",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
+			},
+			{
 				id: "https://www.googleapis.com/auth/documents.readonly",
 				description: "See all your Google Docs documents",
 			},
@@ -5063,20 +5098,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/drive.file",
 				description:
 					"See, edit, create, and delete only the specific Google Drive files you use with this app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/documents",
-				description:
-					"See, edit, create, and delete all your Google Docs documents",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive",
-				description:
-					"See, edit, create, and delete all of your Google Drive files",
 			},
 		],
 	},
@@ -5198,8 +5219,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/drive/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive.metadata",
-				description: "View and manage metadata of files in your Google Drive",
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.apps.readonly",
+				description: "View your Google Drive apps",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive.appdata",
@@ -5207,39 +5233,34 @@ export const GOOGLE_APIS = [
 					"See, create, and delete its own configuration data in your Google Drive",
 			},
 			{
+				id: "https://www.googleapis.com/auth/drive.file",
+				description:
+					"See, edit, create, and delete only the specific Google Drive files you use with this app",
+			},
+			{
 				id: "https://www.googleapis.com/auth/drive.photos.readonly",
 				description: "View the photos, videos and albums in your Google Photos",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive",
-				description:
-					"See, edit, create, and delete all of your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.apps.readonly",
-				description: "View your Google Drive apps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.file",
-				description:
-					"See, edit, create, and delete only the specific Google Drive files you use with this app",
+				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
+				description: "See information about your Google Drive files",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive.scripts",
 				description: "Modify your Google Apps Script scripts' behavior",
 			},
 			{
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.metadata",
+				description: "View and manage metadata of files in your Google Drive",
+			},
+			{
 				id: "https://www.googleapis.com/auth/drive.meet.readonly",
 				description:
 					"See and download your Google Drive files that were created or edited by Google Meet.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
-				description: "See information about your Google Drive files",
 			},
 		],
 	},
@@ -5253,34 +5274,21 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/drive/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
-				description: "See information about your Google Drive files",
+				id: "https://www.googleapis.com/auth/drive.scripts",
+				description: "Modify your Google Apps Script scripts' behavior",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive.photos.readonly",
 				description: "View the photos, videos and albums in your Google Photos",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.appdata",
+				id: "https://www.googleapis.com/auth/drive.meet.readonly",
 				description:
-					"See, create, and delete its own configuration data in your Google Drive",
+					"See and download your Google Drive files that were created or edited by Google Meet.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.file",
-				description:
-					"See, edit, create, and delete only the specific Google Drive files you use with this app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.apps.readonly",
-				description: "View your Google Drive apps",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.metadata",
-				description: "View and manage metadata of files in your Google Drive",
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive",
@@ -5288,13 +5296,26 @@ export const GOOGLE_APIS = [
 					"See, edit, create, and delete all of your Google Drive files",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.scripts",
-				description: "Modify your Google Apps Script scripts' behavior",
+				id: "https://www.googleapis.com/auth/drive.appdata",
+				description:
+					"See, create, and delete its own configuration data in your Google Drive",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.meet.readonly",
+				id: "https://www.googleapis.com/auth/drive.apps.readonly",
+				description: "View your Google Drive apps",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.file",
 				description:
-					"See and download your Google Drive files that were created or edited by Google Meet.",
+					"See, edit, create, and delete only the specific Google Drive files you use with this app",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.metadata",
+				description: "View and manage metadata of files in your Google Drive",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
+				description: "See information about your Google Drive files",
 			},
 		],
 	},
@@ -5327,11 +5348,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/drive/labels",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive.admin.labels",
-				description:
-					"See, edit, create, and delete all Google Drive labels in your organization, and see your organization's label-related admin policies",
-			},
-			{
 				id: "https://www.googleapis.com/auth/drive.admin.labels.readonly",
 				description:
 					"See all Google Drive labels and label-related admin policies in your organization",
@@ -5339,6 +5355,11 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/drive.labels",
 				description: "See, edit, create, and delete your Google Drive labels",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.admin.labels",
+				description:
+					"See, edit, create, and delete all Google Drive labels in your organization, and see your organization's label-related admin policies",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive.labels.readonly",
@@ -5355,22 +5376,22 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/drive/labels",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive.labels",
-				description: "See, edit, create, and delete your Google Drive labels",
-			},
-			{
 				id: "https://www.googleapis.com/auth/drive.admin.labels.readonly",
 				description:
 					"See all Google Drive labels and label-related admin policies in your organization",
 			},
 			{
+				id: "https://www.googleapis.com/auth/drive.labels.readonly",
+				description: "See your Google Drive labels",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.labels",
+				description: "See, edit, create, and delete your Google Drive labels",
+			},
+			{
 				id: "https://www.googleapis.com/auth/drive.admin.labels",
 				description:
 					"See, edit, create, and delete all Google Drive labels in your organization, and see your organization's label-related admin policies",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.labels.readonly",
-				description: "See your Google Drive labels",
 			},
 		],
 	},
@@ -5495,13 +5516,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://firebase.google.com",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/firebase",
+				description: "View and administer all your Firebase data and settings",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/firebase",
-				description: "View and administer all your Firebase data and settings",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
@@ -5632,6 +5653,10 @@ export const GOOGLE_APIS = [
 					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
+				id: "https://www.googleapis.com/auth/firebase.readonly",
+				description: "View all your Firebase data and settings",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
@@ -5639,10 +5664,6 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/firebase",
 				description: "View and administer all your Firebase data and settings",
-			},
-			{
-				id: "https://www.googleapis.com/auth/firebase.readonly",
-				description: "View all your Firebase data and settings",
 			},
 		],
 	},
@@ -5702,15 +5723,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://firebase.google.com/docs/hosting/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/firebase.readonly",
-				description: "View all your Firebase data and settings",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
@@ -5718,6 +5730,15 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/firebase",
 				description: "View and administer all your Firebase data and settings",
+			},
+			{
+				id: "https://www.googleapis.com/auth/firebase.readonly",
+				description: "View all your Firebase data and settings",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -5731,13 +5752,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://firebase.google.com/docs/hosting/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/firebase",
-				description: "View and administer all your Firebase data and settings",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/firebase",
+				description: "View and administer all your Firebase data and settings",
 			},
 		],
 	},
@@ -5902,45 +5923,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/fit/rest/v1/get-started",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/fitness.oxygen_saturation.read",
-				description:
-					"See info about your oxygen saturation in Google Fit. I consent to Google sharing my oxygen saturation information with this app.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.heart_rate.read",
-				description:
-					"See your heart rate data in Google Fit. I consent to Google sharing my heart rate information with this app.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.location.read",
-				description: "See your Google Fit speed and distance data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.sleep.write",
-				description:
-					"Add to your sleep data in Google Fit. I consent to Google using my sleep information with this app.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.blood_pressure.write",
-				description:
-					"Add info about your blood pressure in Google Fit. I consent to Google using my blood pressure information with this app.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.body_temperature.read",
-				description:
-					"See info about your body temperature in Google Fit. I consent to Google sharing my body temperature information with this app.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.activity.read",
-				description:
-					"Use Google Fit to see and store your physical activity data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.reproductive_health.write",
-				description:
-					"Add info about your reproductive health in Google Fit. I consent to Google using my reproductive health information with this app.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/fitness.heart_rate.write",
 				description:
 					"Add to your heart rate data in Google Fit. I consent to Google using my heart rate information with this app.",
@@ -5950,19 +5932,18 @@ export const GOOGLE_APIS = [
 				description: "Add to your Google Fit location data",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.reproductive_health.read",
-				description:
-					"See info about your reproductive health in Google Fit. I consent to Google sharing my reproductive health information with this app.",
+				id: "https://www.googleapis.com/auth/fitness.body.write",
+				description: "Add info about your body measurements to Google Fit",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.blood_glucose.write",
+				id: "https://www.googleapis.com/auth/fitness.body_temperature.read",
 				description:
-					"Add info about your blood glucose to Google Fit. I consent to Google using my blood glucose information with this app.",
+					"See info about your body temperature in Google Fit. I consent to Google sharing my body temperature information with this app.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.blood_pressure.read",
+				id: "https://www.googleapis.com/auth/fitness.blood_pressure.write",
 				description:
-					"See info about your blood pressure in Google Fit. I consent to Google sharing my blood pressure information with this app.",
+					"Add info about your blood pressure in Google Fit. I consent to Google using my blood pressure information with this app.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/fitness.oxygen_saturation.write",
@@ -5970,20 +5951,9 @@ export const GOOGLE_APIS = [
 					"Add info about your oxygen saturation in Google Fit. I consent to Google using my oxygen saturation information with this app.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.nutrition.read",
-				description: "See info about your nutrition in Google Fit",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.activity.write",
-				description: "Add to your Google Fit physical activity data",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.body.write",
-				description: "Add info about your body measurements to Google Fit",
-			},
-			{
-				id: "https://www.googleapis.com/auth/fitness.nutrition.write",
-				description: "Add to info about your nutrition in Google Fit",
+				id: "https://www.googleapis.com/auth/fitness.sleep.read",
+				description:
+					"See your sleep data in Google Fit. I consent to Google sharing my sleep information with this app.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/fitness.blood_glucose.read",
@@ -5991,8 +5961,42 @@ export const GOOGLE_APIS = [
 					"See info about your blood glucose in Google Fit. I consent to Google sharing my blood glucose information with this app.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.body.read",
-				description: "See info about your body measurements in Google Fit",
+				id: "https://www.googleapis.com/auth/fitness.reproductive_health.read",
+				description:
+					"See info about your reproductive health in Google Fit. I consent to Google sharing my reproductive health information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.reproductive_health.write",
+				description:
+					"Add info about your reproductive health in Google Fit. I consent to Google using my reproductive health information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.heart_rate.read",
+				description:
+					"See your heart rate data in Google Fit. I consent to Google sharing my heart rate information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.blood_glucose.write",
+				description:
+					"Add info about your blood glucose to Google Fit. I consent to Google using my blood glucose information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.activity.read",
+				description:
+					"Use Google Fit to see and store your physical activity data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.nutrition.read",
+				description: "See info about your nutrition in Google Fit",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.nutrition.write",
+				description: "Add to info about your nutrition in Google Fit",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.blood_pressure.read",
+				description:
+					"See info about your blood pressure in Google Fit. I consent to Google sharing my blood pressure information with this app.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/fitness.body_temperature.write",
@@ -6000,9 +6004,26 @@ export const GOOGLE_APIS = [
 					"Add to info about your body temperature in Google Fit. I consent to Google using my body temperature information with this app.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/fitness.sleep.read",
+				id: "https://www.googleapis.com/auth/fitness.body.read",
+				description: "See info about your body measurements in Google Fit",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.sleep.write",
 				description:
-					"See your sleep data in Google Fit. I consent to Google sharing my sleep information with this app.",
+					"Add to your sleep data in Google Fit. I consent to Google using my sleep information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.activity.write",
+				description: "Add to your Google Fit physical activity data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.oxygen_saturation.read",
+				description:
+					"See info about your oxygen saturation in Google Fit. I consent to Google sharing my oxygen saturation information with this app.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/fitness.location.read",
+				description: "See your Google Fit speed and distance data",
 			},
 		],
 	},
@@ -6019,17 +6040,8 @@ export const GOOGLE_APIS = [
 					"See, edit, create, and delete only the specific Google Drive files you use with this app",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive",
-				description:
-					"See, edit, create, and delete all of your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/forms.body.readonly",
-				description: "See all your Google Forms forms",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
+				id: "https://www.googleapis.com/auth/forms.responses.readonly",
+				description: "See all responses to your Google Forms forms",
 			},
 			{
 				id: "https://www.googleapis.com/auth/forms.body",
@@ -6037,8 +6049,17 @@ export const GOOGLE_APIS = [
 					"See, edit, create, and delete all your Google Forms forms",
 			},
 			{
-				id: "https://www.googleapis.com/auth/forms.responses.readonly",
-				description: "See all responses to your Google Forms forms",
+				id: "https://www.googleapis.com/auth/forms.body.readonly",
+				description: "See all your Google Forms forms",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
 			},
 		],
 	},
@@ -6051,13 +6072,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/games/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/androidpublisher",
-				description: "View and manage your Google Play Developer account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/drive.appdata",
 				description:
 					"See, create, and delete its own configuration data in your Google Drive",
+			},
+			{
+				id: "https://www.googleapis.com/auth/androidpublisher",
+				description: "View and manage your Google Play Developer account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/games",
@@ -6248,18 +6269,9 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/gmail/api/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
+				id: "https://www.googleapis.com/auth/gmail.addons.current.message.action",
 				description:
-					"Manage drafts and send emails when you interact with the add-on",
-			},
-			{
-				id: "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
-				description: "View your email messages when the add-on is running",
-			},
-			{
-				id: "https://www.googleapis.com/auth/gmail.metadata",
-				description:
-					"View your email message metadata such as labels and headers, but not the email body",
+					"View your email messages when you interact with the add-on",
 			},
 			{
 				id: "https://www.googleapis.com/auth/gmail.modify",
@@ -6271,16 +6283,13 @@ export const GOOGLE_APIS = [
 					"View your email message metadata when the add-on is running",
 			},
 			{
+				id: "https://www.googleapis.com/auth/gmail.metadata",
+				description:
+					"View your email message metadata such as labels and headers, but not the email body",
+			},
+			{
 				id: "https://www.googleapis.com/auth/gmail.compose",
 				description: "Manage drafts and send emails",
-			},
-			{
-				id: "https://www.googleapis.com/auth/gmail.send",
-				description: "Send email on your behalf",
-			},
-			{
-				id: "https://www.googleapis.com/auth/gmail.insert",
-				description: "Add emails into your Gmail mailbox",
 			},
 			{
 				id: "https://mail.google.com/",
@@ -6288,27 +6297,39 @@ export const GOOGLE_APIS = [
 					"Read, compose, send, and permanently delete all your email from Gmail",
 			},
 			{
+				id: "https://www.googleapis.com/auth/gmail.insert",
+				description: "Add emails into your Gmail mailbox",
+			},
+			{
+				id: "https://www.googleapis.com/auth/gmail.settings.sharing",
+				description:
+					"Manage your sensitive mail settings, including who can manage your mail",
+			},
+			{
+				id: "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+				description: "View your email messages when the add-on is running",
+			},
+			{
 				id: "https://www.googleapis.com/auth/gmail.labels",
 				description: "See and edit your email labels",
+			},
+			{
+				id: "https://www.googleapis.com/auth/gmail.send",
+				description: "Send email on your behalf",
 			},
 			{
 				id: "https://www.googleapis.com/auth/gmail.readonly",
 				description: "View your email messages and settings",
 			},
 			{
-				id: "https://www.googleapis.com/auth/gmail.addons.current.message.action",
+				id: "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
 				description:
-					"View your email messages when you interact with the add-on",
+					"Manage drafts and send emails when you interact with the add-on",
 			},
 			{
 				id: "https://www.googleapis.com/auth/gmail.settings.basic",
 				description:
 					"See, edit, create, or change your email settings and filters in Gmail",
-			},
-			{
-				id: "https://www.googleapis.com/auth/gmail.settings.sharing",
-				description:
-					"Manage your sensitive mail settings, including who can manage your mail",
 			},
 		],
 	},
@@ -6357,6 +6378,11 @@ export const GOOGLE_APIS = [
 			"https://developers.google.com/workspace/gmail/postmaster",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/postmaster.traffic.readonly",
+				description:
+					"Get email traffic metrics for the domains you have registered with Postmaster Tools",
+			},
+			{
 				id: "https://www.googleapis.com/auth/postmaster",
 				description:
 					"Get email traffic metrics, manage domains, and manage domain users for the domains you have registered with Postmaster Tools",
@@ -6365,11 +6391,6 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/postmaster.domain",
 				description:
 					"View and manage the domains you have registered with Postmaster Tools",
-			},
-			{
-				id: "https://www.googleapis.com/auth/postmaster.traffic.readonly",
-				description:
-					"Get email traffic metrics for the domains you have registered with Postmaster Tools",
 			},
 		],
 	},
@@ -6637,13 +6658,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/identity-platform",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/firebase",
-				description: "View and administer all your Firebase data and settings",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"View and manage your data across Google Cloud Platform services",
+			},
+			{
+				id: "https://www.googleapis.com/auth/firebase",
+				description: "View and administer all your Firebase data and settings",
 			},
 		],
 	},
@@ -6723,13 +6744,13 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/talent-solution/job-search/docs/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/jobs",
+				description: "Manage job postings",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/jobs",
-				description: "Manage job postings",
 			},
 		],
 	},
@@ -6743,13 +6764,13 @@ export const GOOGLE_APIS = [
 			"https://cloud.google.com/talent-solution/job-search/docs/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/jobs",
-				description: "Manage job postings",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/jobs",
+				description: "Manage job postings",
 			},
 		],
 	},
@@ -6762,13 +6783,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/keep/api",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/keep.readonly",
-				description: "View all your Google Keep data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/keep",
 				description:
 					"See, edit, create and permanently delete all your Google Keep data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/keep.readonly",
+				description: "View all your Google Keep data",
 			},
 		],
 	},
@@ -6827,14 +6848,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/natural-language/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-language",
 				description:
 					"Apply machine learning models to reveal the structure and meaning of text",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -6848,14 +6869,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/natural-language/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-language",
-				description:
-					"Apply machine learning models to reveal the structure and meaning of text",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-language",
+				description:
+					"Apply machine learning models to reveal the structure and meaning of text",
 			},
 		],
 	},
@@ -6920,10 +6941,6 @@ export const GOOGLE_APIS = [
 				description: "View log data for your projects",
 			},
 			{
-				id: "https://www.googleapis.com/auth/logging.admin",
-				description: "Administrate log data for your projects",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
@@ -6936,6 +6953,10 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/logging.admin",
+				description: "Administrate log data for your projects",
 			},
 		],
 	},
@@ -7044,14 +7065,14 @@ export const GOOGLE_APIS = [
 			"https://developers.google.com/analytics/devguides/config/gmp/v1",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/marketingplatformadmin.analytics.update",
-				description:
-					"Manage your Google Analytics product account data in GMP home",
-			},
-			{
 				id: "https://www.googleapis.com/auth/marketingplatformadmin.analytics.read",
 				description:
 					"View your Google Analytics product account data in GMP home",
+			},
+			{
+				id: "https://www.googleapis.com/auth/marketingplatformadmin.analytics.update",
+				description:
+					"Manage your Google Analytics product account data in GMP home",
 			},
 		],
 	},
@@ -7599,10 +7620,6 @@ export const GOOGLE_APIS = [
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/monitoring.write",
-				description: "Publish metric data to your Google Cloud projects",
-			},
-			{
 				id: "https://www.googleapis.com/auth/monitoring",
 				description:
 					"View and write monitoring data for all of your Google and third-party Cloud and API projects",
@@ -7611,6 +7628,10 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/monitoring.read",
 				description:
 					"View monitoring data for all of your Google Cloud and third-party projects",
+			},
+			{
+				id: "https://www.googleapis.com/auth/monitoring.write",
+				description: "Publish metric data to your Google Cloud projects",
 			},
 		],
 	},
@@ -7623,14 +7644,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/monitoring/api/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/monitoring",
-				description:
-					"View and write monitoring data for all of your Google and third-party Cloud and API projects",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/monitoring",
+				description:
+					"View and write monitoring data for all of your Google and third-party Cloud and API projects",
 			},
 			{
 				id: "https://www.googleapis.com/auth/monitoring.read",
@@ -8267,42 +8288,22 @@ export const GOOGLE_APIS = [
 					"See your personal info, including any personal info you've made publicly available",
 			},
 			{
-				id: "https://www.googleapis.com/auth/user.addresses.read",
-				description: "View your street addresses",
-			},
-			{
-				id: "https://www.googleapis.com/auth/user.gender.read",
-				description: "See your gender",
-			},
-			{
-				id: "https://www.googleapis.com/auth/userinfo.email",
-				description: "See your primary Google Account email address",
-			},
-			{
-				id: "https://www.googleapis.com/auth/user.phonenumbers.read",
-				description: "See and download your personal phone numbers",
-			},
-			{
-				id: "https://www.googleapis.com/auth/contacts.readonly",
-				description: "See and download your contacts",
-			},
-			{
-				id: "https://www.googleapis.com/auth/user.organization.read",
-				description: "See your education, work history and org info",
-			},
-			{
 				id: "https://www.googleapis.com/auth/contacts",
 				description:
 					"See, edit, download, and permanently delete your contacts",
 			},
 			{
-				id: "https://www.googleapis.com/auth/user.birthday.read",
-				description: "See and download your exact date of birth",
+				id: "https://www.googleapis.com/auth/contacts.other.readonly",
+				description:
+					'See and download contact info automatically saved in your "Other contacts"',
 			},
 			{
-				id: "https://www.googleapis.com/auth/user.emails.read",
-				description:
-					"See and download all of your Google Account email addresses",
+				id: "https://www.googleapis.com/auth/user.addresses.read",
+				description: "View your street addresses",
+			},
+			{
+				id: "https://www.googleapis.com/auth/user.phonenumbers.read",
+				description: "See and download your personal phone numbers",
 			},
 			{
 				id: "https://www.googleapis.com/auth/directory.readonly",
@@ -8310,9 +8311,29 @@ export const GOOGLE_APIS = [
 					"See and download your organization's Google Workspace directory",
 			},
 			{
-				id: "https://www.googleapis.com/auth/contacts.other.readonly",
+				id: "https://www.googleapis.com/auth/user.organization.read",
+				description: "See your education, work history and org info",
+			},
+			{
+				id: "https://www.googleapis.com/auth/userinfo.email",
+				description: "See your primary Google Account email address",
+			},
+			{
+				id: "https://www.googleapis.com/auth/user.gender.read",
+				description: "See your gender",
+			},
+			{
+				id: "https://www.googleapis.com/auth/contacts.readonly",
+				description: "See and download your contacts",
+			},
+			{
+				id: "https://www.googleapis.com/auth/user.emails.read",
 				description:
-					'See and download contact info automatically saved in your "Other contacts"',
+					"See and download all of your Google Account email addresses",
+			},
+			{
+				id: "https://www.googleapis.com/auth/user.birthday.read",
+				description: "See and download your exact date of birth",
 			},
 		],
 	},
@@ -8326,29 +8347,14 @@ export const GOOGLE_APIS = [
 			"https://mapsplatform.google.com/maps-products/#places-section",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/maps-platform.places.getphotomedia",
-				description:
-					"Private Service: https://www.googleapis.com/auth/maps-platform.places.getphotomedia",
-			},
-			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/maps-platform.places",
 				description:
 					"Private Service: https://www.googleapis.com/auth/maps-platform.places",
 			},
 			{
-				id: "https://www.googleapis.com/auth/maps-platform.places.details",
+				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
-					"Private Service: https://www.googleapis.com/auth/maps-platform.places.details",
-			},
-			{
-				id: "https://www.googleapis.com/auth/maps-platform.places.textsearch",
-				description:
-					"Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch",
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 			{
 				id: "https://www.googleapis.com/auth/maps-platform.places.autocomplete",
@@ -8359,6 +8365,21 @@ export const GOOGLE_APIS = [
 				id: "https://www.googleapis.com/auth/maps-platform.places.nearbysearch",
 				description:
 					"Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch",
+			},
+			{
+				id: "https://www.googleapis.com/auth/maps-platform.places.details",
+				description:
+					"Private Service: https://www.googleapis.com/auth/maps-platform.places.details",
+			},
+			{
+				id: "https://www.googleapis.com/auth/maps-platform.places.getphotomedia",
+				description:
+					"Private Service: https://www.googleapis.com/auth/maps-platform.places.getphotomedia",
+			},
+			{
+				id: "https://www.googleapis.com/auth/maps-platform.places.textsearch",
+				description:
+					"Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch",
 			},
 		],
 	},
@@ -8635,13 +8656,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/spectrum-access-system/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/sasportal",
+				description: "Read, create, update, and delete your SAS Portal data.",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/sasportal",
-				description: "Read, create, update, and delete your SAS Portal data.",
 			},
 		],
 	},
@@ -9028,14 +9049,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/run/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/run",
-				description:
-					"See, edit, configure, and delete your Google Cloud Run data and see the email address for your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/run",
+				description:
+					"See, edit, configure, and delete your Google Cloud Run data and see the email address for your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/run.readonly",
@@ -9166,34 +9187,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/apps-script/api/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive",
+				id: "https://www.googleapis.com/auth/admin.directory.group",
 				description:
-					"See, edit, create, and delete all of your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/groups",
-				description: "View and manage your Google Groups",
-			},
-			{
-				id: "https://www.google.com/m8/feeds",
-				description:
-					"See, edit, download, and permanently delete your contacts",
-			},
-			{
-				id: "https://www.googleapis.com/auth/script.deployments",
-				description: "Create and update Google Apps Script deployments",
-			},
-			{
-				id: "https://www.googleapis.com/auth/userinfo.email",
-				description: "See your primary Google Account email address",
+					"View and manage the provisioning of groups on your domain",
 			},
 			{
 				id: "https://www.googleapis.com/auth/forms",
 				description: "View and manage your forms in Google Drive",
-			},
-			{
-				id: "https://www.googleapis.com/auth/script.deployments.readonly",
-				description: "View Google Apps Script deployments",
 			},
 			{
 				id: "https://mail.google.com/",
@@ -9201,8 +9201,9 @@ export const GOOGLE_APIS = [
 					"Read, compose, send, and permanently delete all your email from Gmail",
 			},
 			{
-				id: "https://www.googleapis.com/auth/script.processes",
-				description: "View Google Apps Script processes",
+				id: "https://www.googleapis.com/auth/documents",
+				description:
+					"See, edit, create, and delete all your Google Docs documents",
 			},
 			{
 				id: "https://www.googleapis.com/auth/forms.currentonly",
@@ -9210,8 +9211,12 @@ export const GOOGLE_APIS = [
 					"View and manage forms that this application has been installed in",
 			},
 			{
-				id: "https://www.googleapis.com/auth/admin.directory.user",
-				description: "View and manage the provisioning of users on your domain",
+				id: "https://www.googleapis.com/auth/userinfo.email",
+				description: "See your primary Google Account email address",
+			},
+			{
+				id: "https://www.googleapis.com/auth/groups",
+				description: "View and manage your Google Groups",
 			},
 			{
 				id: "https://www.google.com/calendar/feeds",
@@ -9219,31 +9224,47 @@ export const GOOGLE_APIS = [
 					"See, edit, share, and permanently delete all the calendars you can access using Google Calendar",
 			},
 			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/spreadsheets",
+				description:
+					"See, edit, create, and delete all your Google Sheets spreadsheets",
+			},
+			{
+				id: "https://www.googleapis.com/auth/script.deployments",
+				description: "Create and update Google Apps Script deployments",
+			},
+			{
+				id: "https://www.googleapis.com/auth/script.processes",
+				description: "View Google Apps Script processes",
+			},
+			{
 				id: "https://www.googleapis.com/auth/script.projects.readonly",
 				description: "View Google Apps Script projects",
 			},
 			{
-				id: "https://www.googleapis.com/auth/documents",
-				description:
-					"See, edit, create, and delete all your Google Docs documents",
+				id: "https://www.googleapis.com/auth/script.deployments.readonly",
+				description: "View Google Apps Script deployments",
 			},
 			{
 				id: "https://www.googleapis.com/auth/script.projects",
 				description: "Create and update Google Apps Script projects",
 			},
 			{
+				id: "https://www.google.com/m8/feeds",
+				description:
+					"See, edit, download, and permanently delete your contacts",
+			},
+			{
+				id: "https://www.googleapis.com/auth/admin.directory.user",
+				description: "View and manage the provisioning of users on your domain",
+			},
+			{
 				id: "https://www.googleapis.com/auth/script.metrics",
 				description: "View Google Apps Script project's metrics",
-			},
-			{
-				id: "https://www.googleapis.com/auth/admin.directory.group",
-				description:
-					"View and manage the provisioning of groups on your domain",
-			},
-			{
-				id: "https://www.googleapis.com/auth/spreadsheets",
-				description:
-					"See, edit, create, and delete all your Google Sheets spreadsheets",
 			},
 		],
 	},
@@ -9619,13 +9640,13 @@ export const GOOGLE_APIS = [
 					"View your data across Google Cloud services and see the email address of your Google Account",
 			},
 			{
+				id: "https://www.googleapis.com/auth/service.management",
+				description: "Manage your Google API service configuration",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/service.management",
-				description: "Manage your Google API service configuration",
 			},
 		],
 	},
@@ -9639,13 +9660,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/service-usage/",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/service.management",
+				description: "Manage your Google API service configuration",
+			},
+			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/service.management",
-				description: "Manage your Google API service configuration",
 			},
 			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
@@ -9663,27 +9684,27 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/sheets/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive",
+				id: "https://www.googleapis.com/auth/drive.file",
 				description:
-					"See, edit, create, and delete all of your Google Drive files",
+					"See, edit, create, and delete only the specific Google Drive files you use with this app",
 			},
 			{
 				id: "https://www.googleapis.com/auth/drive.readonly",
 				description: "See and download all your Google Drive files",
 			},
 			{
+				id: "https://www.googleapis.com/auth/spreadsheets.readonly",
+				description: "See all your Google Sheets spreadsheets",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
 				id: "https://www.googleapis.com/auth/spreadsheets",
 				description:
 					"See, edit, create, and delete all your Google Sheets spreadsheets",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.file",
-				description:
-					"See, edit, create, and delete only the specific Google Drive files you use with this app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/spreadsheets.readonly",
-				description: "See all your Google Sheets spreadsheets",
 			},
 		],
 	},
@@ -9715,13 +9736,28 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/slides/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
+				id: "https://www.googleapis.com/auth/drive.file",
+				description:
+					"See, edit, create, and delete only the specific Google Drive files you use with this app",
 			},
 			{
 				id: "https://www.googleapis.com/auth/presentations",
 				description:
 					"See, edit, create, and delete all your Google Slides presentations",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/spreadsheets",
+				description:
+					"See, edit, create, and delete all your Google Sheets spreadsheets",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
 			},
 			{
 				id: "https://www.googleapis.com/auth/spreadsheets.readonly",
@@ -9730,21 +9766,6 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/presentations.readonly",
 				description: "See all your Google Slides presentations",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive",
-				description:
-					"See, edit, create, and delete all of your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.file",
-				description:
-					"See, edit, create, and delete only the specific Google Drive files you use with this app",
-			},
-			{
-				id: "https://www.googleapis.com/auth/spreadsheets",
-				description:
-					"See, edit, create, and delete all your Google Sheets spreadsheets",
 			},
 		],
 	},
@@ -9787,14 +9808,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/spanner/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/spanner.data",
-				description:
-					"See, edit, configure, and delete your Google Cloud Spanner data and see the email address for your Google Account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/spanner.data",
+				description:
+					"See, edit, configure, and delete your Google Cloud Spanner data and see the email address for your Google Account",
 			},
 			{
 				id: "https://www.googleapis.com/auth/spanner.admin",
@@ -9984,12 +10005,16 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/tag-manager",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/tagmanager.edit.containerversions",
+				description: "Manage your Google Tag Manager container versions",
+			},
+			{
 				id: "https://www.googleapis.com/auth/tagmanager.publish",
 				description: "Publish your Google Tag Manager container versions",
 			},
 			{
-				id: "https://www.googleapis.com/auth/tagmanager.manage.accounts",
-				description: "View and manage your Google Tag Manager accounts",
+				id: "https://www.googleapis.com/auth/tagmanager.delete.containers",
+				description: "Delete your Google Tag Manager containers",
 			},
 			{
 				id: "https://www.googleapis.com/auth/tagmanager.readonly",
@@ -9997,13 +10022,8 @@ export const GOOGLE_APIS = [
 					"View your Google Tag Manager container and its subcomponents",
 			},
 			{
-				id: "https://www.googleapis.com/auth/tagmanager.manage.users",
-				description:
-					"Manage user permissions of your Google Tag Manager account and container",
-			},
-			{
-				id: "https://www.googleapis.com/auth/tagmanager.delete.containers",
-				description: "Delete your Google Tag Manager containers",
+				id: "https://www.googleapis.com/auth/tagmanager.manage.accounts",
+				description: "View and manage your Google Tag Manager accounts",
 			},
 			{
 				id: "https://www.googleapis.com/auth/tagmanager.edit.containers",
@@ -10011,8 +10031,9 @@ export const GOOGLE_APIS = [
 					"Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing",
 			},
 			{
-				id: "https://www.googleapis.com/auth/tagmanager.edit.containerversions",
-				description: "Manage your Google Tag Manager container versions",
+				id: "https://www.googleapis.com/auth/tagmanager.manage.users",
+				description:
+					"Manage user permissions of your Google Tag Manager account and container",
 			},
 		],
 	},
@@ -10026,26 +10047,8 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/tag-manager",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/tagmanager.edit.containerversions",
-				description: "Manage your Google Tag Manager container versions",
-			},
-			{
-				id: "https://www.googleapis.com/auth/tagmanager.readonly",
-				description:
-					"View your Google Tag Manager container and its subcomponents",
-			},
-			{
-				id: "https://www.googleapis.com/auth/tagmanager.delete.containers",
-				description: "Delete your Google Tag Manager containers",
-			},
-			{
 				id: "https://www.googleapis.com/auth/tagmanager.manage.accounts",
 				description: "View and manage your Google Tag Manager accounts",
-			},
-			{
-				id: "https://www.googleapis.com/auth/tagmanager.edit.containers",
-				description:
-					"Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing",
 			},
 			{
 				id: "https://www.googleapis.com/auth/tagmanager.manage.users",
@@ -10055,6 +10058,24 @@ export const GOOGLE_APIS = [
 			{
 				id: "https://www.googleapis.com/auth/tagmanager.publish",
 				description: "Publish your Google Tag Manager container versions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/tagmanager.edit.containerversions",
+				description: "Manage your Google Tag Manager container versions",
+			},
+			{
+				id: "https://www.googleapis.com/auth/tagmanager.delete.containers",
+				description: "Delete your Google Tag Manager containers",
+			},
+			{
+				id: "https://www.googleapis.com/auth/tagmanager.edit.containers",
+				description:
+					"Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing",
+			},
+			{
+				id: "https://www.googleapis.com/auth/tagmanager.readonly",
+				description:
+					"View your Google Tag Manager container and its subcomponents",
 			},
 		],
 	},
@@ -10086,14 +10107,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://firebase.google.com/docs/test-lab/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform.read-only",
 				description:
 					"View your data across Google Cloud services and see the email address of your Google Account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -10349,12 +10370,12 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/vault",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/ediscovery.readonly",
-				description: "View your eDiscovery data",
-			},
-			{
 				id: "https://www.googleapis.com/auth/ediscovery",
 				description: "Manage your eDiscovery data",
+			},
+			{
+				id: "https://www.googleapis.com/auth/ediscovery.readonly",
+				description: "View your eDiscovery data",
 			},
 		],
 	},
@@ -10488,14 +10509,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/vision/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-vision",
-				description:
-					"Apply machine learning models to understand and label images",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-platform",
 				description:
 					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-vision",
+				description:
+					"Apply machine learning models to understand and label images",
 			},
 		],
 	},
@@ -10509,14 +10530,14 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://cloud.google.com/vision/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/cloud-platform",
-				description:
-					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
-			},
-			{
 				id: "https://www.googleapis.com/auth/cloud-vision",
 				description:
 					"Apply machine learning models to understand and label images",
+			},
+			{
+				id: "https://www.googleapis.com/auth/cloud-platform",
+				description:
+					"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.",
 			},
 		],
 	},
@@ -10800,9 +10821,45 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/workspace/events",
 		scopes: [
 			{
+				id: "https://www.googleapis.com/auth/chat.app.messages.readonly",
+				description:
+					"On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.file",
+				description:
+					"See, edit, create, and delete only the specific Google Drive files you use with this app",
+			},
+			{
 				id: "https://www.googleapis.com/auth/chat.bot",
 				description:
 					"Private Service: https://www.googleapis.com/auth/chat.bot",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.memberships.readonly",
+				description: "View members in Google Chat conversations.",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive",
+				description:
+					"See, edit, create, and delete all of your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.readonly",
+				description: "See and download all your Google Drive files",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.app.spaces.readonly",
+				description:
+					"On their own behalf, apps in Google Chat can see conversations and spaces and their metadata (including history settings and access settings)",
+			},
+			{
+				id: "https://www.googleapis.com/auth/chat.users.readstate.readonly",
+				description: "View last read time for Google Chat conversations",
+			},
+			{
+				id: "https://www.googleapis.com/auth/drive.metadata",
+				description: "View and manage metadata of files in your Google Drive",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.memberships",
@@ -10810,32 +10867,18 @@ export const GOOGLE_APIS = [
 					"See, add, update, and remove members from conversations and spaces in Google Chat",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.app.spaces",
+				id: "https://www.googleapis.com/auth/chat.app.memberships.readonly",
 				description:
-					"On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings)",
+					"On their own behalf, apps in Google Chat can see members of conversations and spaces",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.memberships.readonly",
-				description: "View members in Google Chat conversations.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/meetings.space.readonly",
+				id: "https://www.googleapis.com/auth/chat.messages.readonly",
 				description:
-					"Read information about any of your Google Meet conferences",
+					"See messages as well as their reactions and message content in Google Chat",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
-				description: "See information about your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.messages",
-				description:
-					"See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.app.spaces.readonly",
-				description:
-					"On their own behalf, apps in Google Chat can see conversations and spaces and their metadata (including history settings and access settings)",
+				id: "https://www.googleapis.com/auth/chat.spaces.readonly",
+				description: "View chat and spaces in Google Chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.messages.reactions.readonly",
@@ -10848,9 +10891,9 @@ export const GOOGLE_APIS = [
 					"Create, edit, and see information about your Google Meet conferences created by the app.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.file",
+				id: "https://www.googleapis.com/auth/chat.spaces",
 				description:
-					"See, edit, create, and delete only the specific Google Drive files you use with this app",
+					"Create conversations and spaces and see or update metadata (including history settings and access settings) in Google Chat",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.app.memberships",
@@ -10858,28 +10901,23 @@ export const GOOGLE_APIS = [
 					"On their own behalf, apps in Google Chat can see, add, update, and remove members from conversations and spaces",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.messages.readonly",
+				id: "https://www.googleapis.com/auth/chat.messages",
 				description:
-					"See messages as well as their reactions and message content in Google Chat",
+					"See, compose, send, update, and delete messages as well as their message content; add, see, and delete reactions to messages.",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.spaces",
+				id: "https://www.googleapis.com/auth/meetings.space.readonly",
 				description:
-					"Create conversations and spaces and see or update metadata (including history settings and access settings) in Google Chat",
+					"Read information about any of your Google Meet conferences",
 			},
 			{
-				id: "https://www.googleapis.com/auth/chat.spaces.readonly",
-				description: "View chat and spaces in Google Chat",
+				id: "https://www.googleapis.com/auth/chat.app.spaces",
+				description:
+					"On their own behalf, apps in Google Chat can create conversations and spaces and see or update their metadata (including history settings and access settings)",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive",
-				description:
-					"See, edit, create, and delete all of your Google Drive files",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.app.memberships.readonly",
-				description:
-					"On their own behalf, apps in Google Chat can see members of conversations and spaces",
+				id: "https://www.googleapis.com/auth/drive.metadata.readonly",
+				description: "See information about your Google Drive files",
 			},
 			{
 				id: "https://www.googleapis.com/auth/chat.messages.reactions",
@@ -10887,17 +10925,9 @@ export const GOOGLE_APIS = [
 					"See, add, and delete reactions as well as their reaction content to messages in Google Chat",
 			},
 			{
-				id: "https://www.googleapis.com/auth/drive.metadata",
-				description: "View and manage metadata of files in your Google Drive",
-			},
-			{
-				id: "https://www.googleapis.com/auth/chat.app.messages.readonly",
+				id: "https://www.googleapis.com/auth/chat.users.readstate",
 				description:
-					"On their own behalf, apps in Google Chat can see all messages and their associated reactions and message content",
-			},
-			{
-				id: "https://www.googleapis.com/auth/drive.readonly",
-				description: "See and download all your Google Drive files",
+					"View and modify last read time for Google Chat conversations",
 			},
 		],
 	},
@@ -10943,26 +10973,13 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/youtube/",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/youtube.channel-memberships.creator",
+				id: "https://www.googleapis.com/auth/youtube.force-ssl",
 				description:
-					"See a list of your current active channel members, their current level, and when they became a member",
-			},
-			{
-				id: "https://www.googleapis.com/auth/youtubepartner",
-				description:
-					"View and manage your assets and associated content on YouTube",
-			},
-			{
-				id: "https://www.googleapis.com/auth/youtube",
-				description: "Manage your YouTube account",
+					"See, edit, and permanently delete your YouTube videos, ratings, comments and captions",
 			},
 			{
 				id: "https://www.googleapis.com/auth/youtube.readonly",
 				description: "View your YouTube account",
-			},
-			{
-				id: "https://www.googleapis.com/auth/youtube.upload",
-				description: "Manage your YouTube videos",
 			},
 			{
 				id: "https://www.googleapis.com/auth/youtubepartner-channel-audit",
@@ -10970,9 +10987,22 @@ export const GOOGLE_APIS = [
 					"View private information of your YouTube channel relevant during the audit process with a YouTube partner",
 			},
 			{
-				id: "https://www.googleapis.com/auth/youtube.force-ssl",
+				id: "https://www.googleapis.com/auth/youtube",
+				description: "Manage your YouTube account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/youtube.upload",
+				description: "Manage your YouTube videos",
+			},
+			{
+				id: "https://www.googleapis.com/auth/youtubepartner",
 				description:
-					"See, edit, and permanently delete your YouTube videos, ratings, comments and captions",
+					"View and manage your assets and associated content on YouTube",
+			},
+			{
+				id: "https://www.googleapis.com/auth/youtube.channel-memberships.creator",
+				description:
+					"See a list of your current active channel members, their current level, and when they became a member",
 			},
 		],
 	},
@@ -10985,10 +11015,6 @@ export const GOOGLE_APIS = [
 		documentationLink: "https://developers.google.com/youtube/analytics",
 		scopes: [
 			{
-				id: "https://www.googleapis.com/auth/youtube.readonly",
-				description: "View your YouTube account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/youtubepartner",
 				description:
 					"View and manage your assets and associated content on YouTube",
@@ -10999,12 +11025,16 @@ export const GOOGLE_APIS = [
 					"View monetary and non-monetary YouTube Analytics reports for your YouTube content",
 			},
 			{
-				id: "https://www.googleapis.com/auth/youtube",
-				description: "Manage your YouTube account",
-			},
-			{
 				id: "https://www.googleapis.com/auth/yt-analytics.readonly",
 				description: "View YouTube Analytics reports for your YouTube content",
+			},
+			{
+				id: "https://www.googleapis.com/auth/youtube.readonly",
+				description: "View your YouTube account",
+			},
+			{
+				id: "https://www.googleapis.com/auth/youtube",
+				description: "Manage your YouTube account",
 			},
 		],
 	},
