@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+**Package/Tool affected**
+Which package or tool is this bug related to? (e.g., vscode-extension, gemini-cli)
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
